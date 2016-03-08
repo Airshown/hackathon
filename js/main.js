@@ -24,7 +24,13 @@ jQuery(document).ready(function($){
 		});
 	}
 
-	$(".cd-timeline-img img").click(function() {
-		$(this).next(".cd-timeline-content").toggleClass("hidden");
+	$(".cd-timeline-block a").click(function(oEvent) {
+		oEvent.preventDefault();
+
+		$(this).next(".cd-timeline-content").animate({
+			'opacity': 1
+		}, 500);
+
+		return false;
 	});
 });
