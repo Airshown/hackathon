@@ -1,0 +1,72 @@
+# create random content
+entryCount = 100
+minEntryHeight = 100
+maxEntryHeight = 500
+gap = 20
+
+timelineEntrys = []
+timelineEntrys.push ~~(minEntryHeight + Math.random() * (maxEntryHeight - minEntryHeight)) for i in [1..entryCount]
+
+entrys = [[],[]]
+toggle = 0
+
+for entry in timelineEntrys
+  target = entrys[if toggle > 0 then 1 else 0]
+  sign = if toggle > 0 then 1 else -1
+  toggle = 0 if Math.abs(toggle) < 1
+  target.push
+    height: entry
+    top: (_.last(target)?.top or 0) + (_.last(target)?.height or 0) + gap
+  if Math.abs(toggle) < gap and entrys[0].length > 0 and entrys[1].length > 0
+    entrys[0][entrys[0].length - 1].height += gap * 2
+    entrys[1][entrys[1].length - 1].height += gap * 2
+  toggle -= (entry + gap) * sign
+
+for side, idx in entrys
+  cssSide = if idx is 0 then "left" else "right"
+  for entry, subIdx in side
+    $(".#{cssSide}").append """
+      <div class="entry hidden" style="
+        height: #{entry.height - 30}px;
+        top:    #{entry.top}px;
+      ">
+        <header></header>
+        <article></article>
+      </div>
+    """
+    if idx > 0 or subIdx > 0
+      $(".line").append """
+        <div class="dot hidden" style="
+          top: #{entry.top}px;
+        "></div>
+      """
+
+totalHeight = Math.max _.last(entrys[0]).top + _.last(entrys[0]).height, _.last(entrys[1]).top + _.last(entrys[1]).height
+ 
+$(".line").css
+  "height": "#{totalHeight}px"
+  
+#scrolling
+scroll = ->
+  docTop = $(document).scrollTop()
+  docBottom = docTop + window.innerHeight
+  hits = []
+  for elem in $(".entry, .dot")
+    $this = $ elem
+    $this.removeClass("hidden") if $this.offset().top <= docBottom
+    if $this.offset().top + $this.height() <= docTop and not $this.hasClass("hidden")
+      $this.addClass("hidden")
+    if $this.offset().top > docBottom + gap and not $this.hasClass("hidden")
+      $this.addClass("hidden")
+    if $this.hasClass("dot") and $this.offset().top > docTop and $this.offset().top < docTop + 40
+      hits.push $this
+  if hits.length > 0 and (not $(".year").hasClass("hit"))
+    $(".year").addClass "hit"
+  else if hits.length is 0 and $(".year").hasClass("hit")
+    $(".year").removeClass "hit"
+  for hit in hits
+    hit.addClass("hidden") if not hit.hasClass("hidden")
+
+$(document).scroll -> scroll()
+
+scroll()
