@@ -125,13 +125,13 @@ button:hover {
    margin: 0 auto;
 }
 .activity ul li:first-child {
-  width: 80px !important;
-  height: 80px !important;
+  width: 220px !important;
+  height: 220px !important;
 }
 .activity ul li:last-child {
   margin-top: 10px;
-  height: 60px !important;
-  width: 60px !important;
+  height: 160px !important;
+  width: 160px !important;
 }
 
 .popup ul li button {
@@ -150,17 +150,17 @@ ul li:first-of-type button {
 .circl-smile {
   border-radius: 50%;
   background: #75ce66;
-  padding: 10px;
+  padding: 25px;
 }
 
 .circl-sad {
   border-radius: 50%;
   background: #c03b44;
-  padding: 10px;
+  padding: 25px;
 }
 
 .popup.one {
-   top: calc(50vh - 150px);
+   /*top: calc(50vh - 150px);*/
    left: calc(50vw - 200px);
    -webkit-transform: scale(0);
    transform: scale(0);
@@ -293,7 +293,7 @@ header h1 small{
 #cd-timeline {
   position: relative;
   padding: 2em 0;
-  margin-top: 2em;
+  /*margin-top: 2em;*/
   margin-bottom: 2em;
 }
 #cd-timeline::before {
@@ -614,9 +614,9 @@ header h1 small{
    .popup.one, .popup.three {
       left: calc(50vw - 160px);
    }
-   .popup.one, .popup.two {
+   /*.popup.one, .popup.two {
       top: calc(50vh - 120px);
-   }
+   }*/
 
    button {
       min-width: 125px;
