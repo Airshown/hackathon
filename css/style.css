@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -36,7 +36,7 @@ h1, h2 {
   font-weight: bold;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -76,9 +76,9 @@ Modules - reusable parts of our design
     -moz-animation: cd-bounce-2 0.6s;
     animation: cd-bounce-2 0.6s;
   }
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 header {
@@ -251,11 +251,15 @@ header h1 {
 .no-touch .cd-timeline-content .cd-read-more:hover {
   background-color: #bac4cb;
 }
-.cd-timeline-content .cd-date {
+
+.cd-date {
   float: left;
   padding: .8em 0;
   opacity: .7;
+  position: absolute;
+  left: -3em;
 }
+
 .cd-timeline-content::before {
   content: '';
   position: absolute;
