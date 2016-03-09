@@ -91,7 +91,7 @@ button:hover {
 }
 
 .centered {
-  margin-left: 44%;
+  margin: 0 47%;
   margin-top: -25px;
 }
 
@@ -146,6 +146,18 @@ ul li:first-of-type button {
 /*ul li:last-of-type button {
    background: #c03b44;
 }*/
+
+.circl-smile {
+  border-radius: 50%;
+  background: #75ce66;
+  padding: 10px;
+}
+
+.circl-sad {
+  border-radius: 50%;
+  background: #c03b44;
+  padding: 10px;
+}
 
 .popup.one {
    top: calc(50vh - 150px);
@@ -273,13 +285,13 @@ header h1 {
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
+.cd-timeline-img.cd-green {
   background: #75ce66;
 }
-.cd-timeline-img.cd-movie {
+.cd-timeline-img.cd-red {
   background: #c03b44;
 }
-.cd-timeline-img.cd-location {
+.cd-timeline-img.cd-orange {
   background: #f0ca45;
 }
 
