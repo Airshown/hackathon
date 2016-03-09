@@ -34,11 +34,14 @@ body {
 
 .mask {
   color: #fff;
+  background-size: cover;
   opacity: 0.8;
+  display: block;
   height: 800px;
+  left: 0;
   position: fixed;
   right: 0;
-  z-index: 11;
+  z-index: 3;
 }
 
 a, p {
@@ -68,7 +71,7 @@ h1, h2, h3 {
 .title-link {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6em;
-
+  text-transform: uppercase;
 }
 
 .title-link:hover {
@@ -83,7 +86,8 @@ Popup style
 
 .container {
   text-align: center;
-  padding: 20px;
+  position: fixed;
+  padding-top: 3em;
   z-index: 2;
 }
 
@@ -136,7 +140,7 @@ button:hover {
   z-index: 9999;
   border-radius: 4px;
   padding: 12px;
-  top: 2em;
+  margin-top: 3%;
   left: 10%;
 }
 
@@ -267,7 +271,7 @@ input{
     border-radius: .25rem;
 }
 header {
-	height: 60px;
+	height: 8%;
   background: #021f65;
   overflow: hidden;
   white-space: nowrap;
@@ -327,9 +331,36 @@ header h1 small{
 	float:right;
 }
 
+footer {
+  position: fixed;
+  background: white;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 9999;
+}
+
+footer img {
+  width: 15%;
+}
+
+.footer-button {
+  background: url('../img/burger.svg');
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  /*top: 1em;*/
+  bottom: -1em;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: red;
+}
+
 #cd-timeline {
   position: relative;
-  padding: 2em 0;
+  padding-top: 3em;
   /*margin-top: 2em;*/
   margin-bottom: 2em;
 }
