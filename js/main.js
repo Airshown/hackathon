@@ -3,8 +3,11 @@ jQuery(document).ready(function($){
 		offset = 0;
 
 	//hide timeline blocks which are outside the viewport
-	hideBlocks(timelineBlocks, offset);
+	// hideBlocks(timelineBlocks, offset);
 
+	timelineBlocks.each(function(){
+		($(this).offset().top <= $(window).scrollTop()+$(window).height() * offset) && $(this).find('.cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+	});
 
 	//on scolling, show/animate timeline blocks when enter the viewport
 	$(window).on('scroll', function(){
@@ -27,11 +30,12 @@ jQuery(document).ready(function($){
 		});
 	}
 
-	 $(".cd-timeline-block a").on("click",function() {
-		 if ($(this).parent().find('.cd-timeline-content').hasClass('is-hidden')){
-       		$(this).parent().find('.cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
-		 }else{
-       		$(this).parent().find('.cd-timeline-content').removeClass('bounce-in').addClass('is-hidden');
+	 $(".cd-timeline-block a").on("click", function() {
+		 if($(this).parent().find('.cd-timeline-content').hasClass('is-hidden')) {
+       $(this).parent().find('.cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+		 }
+		 else {
+       $(this).parent().find('.cd-timeline-content').removeClass('bounce-in').addClass('is-hidden');
 		 }
 
     });
