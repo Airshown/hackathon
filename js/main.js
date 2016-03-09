@@ -1,9 +1,9 @@
 jQuery(document).ready(function($){
 	var timelineBlocks = $('.cd-timeline-block'),
-		offset = 0;
+		offset = 0.8;
 
 	//hide timeline blocks which are outside the viewport
-	 hideBlocks(timelineBlocks, 0.8);
+	 hideBlocks(timelineBlocks, offset);
 
 	timelineBlocks.each(function(){
 		($(this).offset().top <= $(window).scrollTop()+$(window).height() * offset) && $(this).find('.cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
