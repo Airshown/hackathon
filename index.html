@@ -1,118 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/reset.css">
-	<!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css">
-	<!-- Resource style -->
-	<script src="js/modernizr.js"></script><!-- Modernizr -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/reset.css">
 
-	<title>Visit by Best Western</title>
-</head>
+		<!-- CSS reset -->
+		<link rel="stylesheet" href="css/style.css">
 
-<body>
-<!-- <header> -->
-		<!-- <h1>Visit by Best Western</h1> -->
-	<!-- </header> -->
+		<!-- Resource style -->
+		<script src="js/modernizr.js"></script><!-- Modernizr -->
 
-<section id="cd-timeline" class="cd-container">
-	<!-- <span class="cd-date">12:15</span> -->
+		<title>Visit by Best Western</title>
+	</head>
 
-	<div class="cd-timeline-block">
-		<span class="cd-date">10:15</span>
-		<a href="#">
-			<div class="cd-timeline-img cd-picture"> <img src="img/coffee.svg" alt="Petit déjeuner"> </div>
-			<!-- cd-timeline-img -->
-		</a>
+	<body>
+		<!-- <header> -->
+			<!-- <h1>Visit by Best Western</h1> -->
+		<!-- </header> -->
 
-		<div class="cd-timeline-content">
-			<h2>Petit déjeuner</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+		<!-- Popup d'activation Bluetooth -->
+		<!-- <div class="container">
+		   <div class="overlay"></div>
+		   <div class="popup one">
+				 	<h3>Aucune activité Bluetooth détectée!</h3>
+		      <p>Pour participer à ce programme la technologie Bluetooth de votre téléphone doit être activée.</p>
+		      <ul>
+		         <li><button id="closePopUpOne">J'ai compris</button></li>
+		      </ul>
+		   </div>
+		</div> -->
+
+		<!-- Popup de sélection de satisfaction -->
+		<div class="container">
+			<div class="overlay"></div>
+			<div class="popup one activity">
+			 <div class="cd-timeline-img centered cd-picture">
+				 <img src="img/coffee.svg" alt="Petit déjeuner">
+			 </div>
+
+				<h3>Activité terminée!</h3>
+				<p>Avez-vous apprécié ?</p>
+
+				<ul>
+					 <li><button id="closePopUpOne">Y</button></li>
+					 <li><button>N</button></li>
+				</ul>
+			</div>
 		</div>
-		<!-- cd-timeline-content -->
-	</div>
-	<!-- cd-timeline-block -->
 
-	<div class="cd-timeline-block">
-		<span class="cd-date">08:30</span>
-		<a href="#">
-			<div class="cd-timeline-img cd-movie"> <img src="img/sleep.svg" alt="Réveil"> </div>
-			<!-- cd-timeline-img -->
-		</a>
+		<!-- Début de la section des évènements de la timeline -->
+		<section id="cd-timeline" class="cd-container">
 
-		<div class="cd-timeline-content">
-			<h2>Réveil</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-		</div>
-		<!-- cd-timeline-content -->
-	</div>
-	<!-- cd-timeline-block -->
+			<div class="cd-timeline-block">
+				<span class="cd-date">10:15</span>
+				<a href="#">
+					<div class="cd-timeline-img cd-picture"> <img src="img/coffee.svg" alt="Petit déjeuner"> </div>
+					<!-- cd-timeline-img -->
+				</a>
 
-	<div class="cd-timeline-block">
-		<span class="cd-date">10:15</span>
-		<a href="#">
-			<div class="cd-timeline-img cd-picture"> <img src="img/coffee.svg" alt="Petit déjeuner"> </div>
-			<!-- cd-timeline-img -->
-		</a>
+				<div class="cd-timeline-content">
+					<h2>Petit déjeuner</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				</div>
+				<!-- cd-timeline-content -->
+			</div>
+			<!-- cd-timeline-block -->
 
-		<div class="cd-timeline-content">
-			<h2>Petit déjeuner</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-		</div>
-		<!-- cd-timeline-content -->
-	</div>
-	<!-- cd-timeline-block -->
+			<div class="cd-timeline-block">
+				<span class="cd-date">08:30</span>
+				<a href="#">
+					<div class="cd-timeline-img cd-movie"> <img src="img/sleep.svg" alt="Réveil"> </div>
+					<!-- cd-timeline-img -->
+				</a>
 
-	<div class="cd-timeline-block">
-		<span class="cd-date">08:30</span>
-		<a href="#">
-			<div class="cd-timeline-img cd-movie"> <img src="img/sleep.svg" alt="Réveil"> </div>
-			<!-- cd-timeline-img -->
-		</a>
+				<div class="cd-timeline-content">
+					<h2>Réveil</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+				</div>
+				<!-- cd-timeline-content -->
+			</div>
+			<!-- cd-timeline-block -->
 
-		<div class="cd-timeline-content">
-			<h2>Réveil</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-		</div>
-		<!-- cd-timeline-content -->
-	</div>
+			<div class="cd-timeline-block">
+				<span class="cd-date center date-full-padding">10:15<br>18 Jan</span>
+				<a href="#">
+					<div class="cd-timeline-img cd-picture"> <img src="img/coffee.svg" alt="Petit déjeuner"> </div>
+					<!-- cd-timeline-img -->
+				</a>
 
-	<div class="cd-timeline-block">
-		<span class="cd-date">10:15</span>
-		<a href="#">
-			<div class="cd-timeline-img cd-picture"> <img src="img/coffee.svg" alt="Petit déjeuner"> </div>
-			<!-- cd-timeline-img -->
-		</a>
+				<div class="cd-timeline-content">
+					<h2>Petit déjeuner</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				</div>
+				<!-- cd-timeline-content -->
+			</div>
+			<!-- cd-timeline-block -->
 
-		<div class="cd-timeline-content">
-			<h2>Petit déjeuner</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-		</div>
-		<!-- cd-timeline-content -->
-	</div>
-	<!-- cd-timeline-block -->
+			<div class="cd-timeline-block">
+				<span class="cd-date center">08:30<br>18 Jan</span>
+				<a href="#">
+					<div class="cd-timeline-img cd-movie"> <img src="img/sleep.svg" alt="Réveil"> </div>
+					<!-- cd-timeline-img -->
+				</a>
 
-	<div class="cd-timeline-block">
-		<span class="cd-date">08:30</span>
-		<a href="#">
-			<div class="cd-timeline-img cd-movie"> <img src="img/sleep.svg" alt="Réveil"> </div>
-			<!-- cd-timeline-img -->
-		</a>
+				<div class="cd-timeline-content">
+					<h2>Réveil</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+				</div>
+				<!-- cd-timeline-content -->
+			</div>
 
-		<div class="cd-timeline-content">
-			<h2>Réveil</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-		</div>
-		<!-- cd-timeline-content -->
-	</div>
-</section>
-<!-- cd-timeline -->
+			<div class="cd-timeline-block">
+				<span class="cd-date">10:15</span>
+				<a href="#">
+					<div class="cd-timeline-img cd-picture"> <img src="img/coffee.svg" alt="Petit déjeuner"> </div>
+					<!-- cd-timeline-img -->
+				</a>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+				<div class="cd-timeline-content">
+					<h2>Petit déjeuner</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				</div>
+				<!-- cd-timeline-content -->
+			</div>
+			<!-- cd-timeline-block -->
 
-</body>
+			<div class="cd-timeline-block">
+				<span class="cd-date">08:30</span>
+				<a href="#">
+					<div class="cd-timeline-img cd-movie"> <img src="img/sleep.svg" alt="Réveil"> </div>
+					<!-- cd-timeline-img -->
+				</a>
+
+				<div class="cd-timeline-content">
+					<h2>Réveil</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+				</div>
+				<!-- cd-timeline-content -->
+			</div>
+		</section>
+		<!-- cd-timeline -->
+
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+	</body>
 </html>

@@ -1,4 +1,23 @@
 jQuery(document).ready(function($){
+
+	var openPopupOne  	= $('#openPopupOne'),
+			overlay     		= $('.overlay'),
+			popup       		= $('.popup'),
+			closePopUpOne 	= $('#closePopUpOne');
+
+		// first style action
+    overlay.fadeIn();
+    popup.show(0, function () {
+      $(this).toggleClass('oneOpen');
+    });
+
+	  closePopUpOne.on('click', function () {
+	      overlay.fadeOut();
+	      popup.toggleClass('oneOpen').delay(700).promise().done(function () {
+	          $(this).hide();
+	      });
+	  });
+
 	var timelineBlocks = $('.cd-timeline-block'),
 		offset = 0.8;
 
