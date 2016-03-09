@@ -97,7 +97,7 @@ button:hover {
 
 .popup {
   background: #f4f4f4;
-  width: 400px;
+  width: 80%;
   text-align: center;
   position: fixed;
   display: none;
@@ -105,6 +105,8 @@ button:hover {
   z-index: 9999;
   border-radius: 4px;
   padding: 12px;
+  top: 2em;
+  left: 10%;
 }
 
 .popup p {
@@ -161,7 +163,7 @@ ul li:first-of-type button {
 
 .popup.one {
    /*top: calc(50vh - 150px);*/
-   left: calc(50vw - 200px);
+   /*left: calc(50vw - 200px);*/
    -webkit-transform: scale(0);
    transform: scale(0);
    opacity: 0;
@@ -233,10 +235,13 @@ input{
     border-radius: .25rem;
 }
 header {
-	height: 110px;
+	height: 60px;
   background: #021f65;
   overflow: hidden;
   white-space: nowrap;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 header h1 {
   color: white;
@@ -322,7 +327,6 @@ header h1 small{
 .cd-timeline-block:last-child {
   margin-bottom: 0;
 }
-
 
 .cd-timeline-img {
   position: absolute;
@@ -607,13 +611,20 @@ header h1 small{
   }
 }
 
+@keyframes movingbox {
+  0%{top: 0%;}
+  50%{top: 10%;}
+  100%{top: 90%;}
+}
+
+.selected-box {
+  -webkit-animation:movingbox 5s infinite;
+}
+
 @media screen and (max-width: 480px) {
-   .popup {
-      width: 300px;
-   }
-   .popup.one, .popup.three {
-      left: calc(50vw - 160px);
-   }
+   /*.popup.one, .popup.three {
+      left: calc(50vw - 150px);
+   }*/
    /*.popup.one, .popup.two {
       top: calc(50vh - 120px);
    }*/

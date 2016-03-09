@@ -3,7 +3,9 @@ jQuery(document).ready(function($){
 	var openPopupOne  	= $('#openPopupOne'),
 			overlay     		= $('.overlay'),
 			popup       		= $('.popup'),
-			closePopUpOne 	= $('#closePopUpOne');
+			closePopUpOne 	= $('#closePopUpOne'),
+			smile						= $('.circl-smile'),
+			sad							= $('.circl-sad');
 
 		// first style action
     overlay.fadeIn();
@@ -11,12 +13,20 @@ jQuery(document).ready(function($){
       $(this).toggleClass('oneOpen');
     });
 
-	  closePopUpOne.on('click', function () {
-	      overlay.fadeOut();
-	      popup.toggleClass('oneOpen').delay(700).promise().done(function () {
-	          $(this).hide();
-	      });
+	  smile.on('click', function() {
+			// $(this).addClass('selected-box');
+			overlay.fadeOut();
+			popup.toggleClass('oneOpen').delay(700).promise().done(function () {
+				$(this).hide();
+			});
 	  });
+
+		sad.on('click', function () {
+			overlay.fadeOut();
+			popup.toggleClass('oneOpen').delay(700).promise().done(function () {
+					$(this).hide();
+			});
+		});
 
 	var timelineBlocks = $('.cd-timeline-block'),
 		offset = 0.8;
