@@ -5,7 +5,8 @@ jQuery(document).ready(function($){
 			popup       		= $('.popup'),
 			closePopUpOne 	= $('#closePopUpOne'),
 			smile						= $('.circl-smile'),
-			sad							= $('.circl-sad');
+			sad							= $('.circl-sad'),
+			footerButton		= $('.footer-button');
 
 		// first style action
     overlay.fadeIn();
@@ -26,6 +27,15 @@ jQuery(document).ready(function($){
 			popup.toggleClass('oneOpen').delay(700).promise().done(function () {
 					$(this).hide();
 			});
+		});
+
+		footerButton.on('click', function() {
+			$(this).parent().toggleClass('full-bottom');
+
+			if($('.item-menu:visible').length)
+				$('.item-menu').hide();
+			else
+				$('.item-menu').show();
 		});
 
 	var timelineBlocks = $('.cd-timeline-block'),
