@@ -294,6 +294,16 @@ header h1 {
 .cd-timeline-img.cd-orange {
   background: #f0ca45;
 }
+.cd-timeline-img.cd-blue {
+  background: #64B5F6;
+}
+.cd-timeline-img.cd-bluecyan {
+  background: #4DB6AC;
+}
+.cd-timeline-img.cd-purple {
+  background: #9575CD;
+}
+
 
 @-webkit-keyframes cd-bounce-1 {
   0% {
