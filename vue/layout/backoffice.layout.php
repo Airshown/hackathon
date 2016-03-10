@@ -279,7 +279,7 @@
         <script src="vue/backoffice/vendors/bower_components/Waves/dist/waves.min.js"></script>
         <script src="vue/backoffice/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
         <script src="vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>  
-        <script src="vue/backoffice/vendors/bootgrid/jquery.bootgrid.updated.min.js"></script>		
+        <script src="vue/backoffice/vendors/bootgrid/jquery.bootgrid.updated.js"></script>		
 
         <script src="vue/backoffice/vendors/bower_components/flot/jquery.flot.js"></script>
         <script src="vue/backoffice/vendors/bower_components/flot/jquery.flot.resize.js"></script>
@@ -346,8 +346,7 @@
                     },
                     formatters: {
                         "commands": function(column, row) {
-                            return "<button type=\"button\" class=\"btn btn-icon command-edit waves-effect waves-circle\" data-row-id=\"" + row.id + "\"><span class=\"zmdi zmdi-edit\"></span></button> " + 
-                                "<button type=\"button\" class=\"btn btn-icon command-delete waves-effect waves-circle\" data-row-id=\"" + row.id + "\"><span class=\"zmdi zmdi-delete\"></span></button>";
+                            return "<button type=\"button\" class=\"btn btn-icon command-edit waves-effect waves-circle\" data-row-id=\"" + row.id + "\"><span class=\"zmdi zmdi-edit\"></span></button> ";
                         }
                     }
                 });

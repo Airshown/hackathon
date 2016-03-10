@@ -23,53 +23,6 @@ class security{
 		}
 	}
 	
-	
-	public static function is_actif_apikey($apiKey){
-			$keyring = new keyring();
-			$keyring->getOneBy($apiKey, "apikey", "keyring");
-			$keyring->setFromBdd($keyring->result);
-			if ($keyring->get_is_actif() == 1 && $keyring->get_is_actif_admin() == 1){
-				$utilisateur = new users;
-				$utilisateur->getOneBy($keyring->get_id_utilisateur(), "id", "users");
-				$utilisateur->setFromBdd($utilisateur->result);
-				if ($utilisateur->get_id() != 0 && $utilisateur->get_is_activate() == 1){
-					$garage = new garage;
-					$garage->getOneBy($utilisateur->get_id_garage(), "id", "garage");
-					$garage->setFromBdd($garage->result);
-					if ($garage->get_is_actif() == 1){
-						return TRUE;
-					}else{
-					return FALSE;
-				}
-				}else{
-					return FALSE;
-				}
-			}else{
-					return FALSE;
-				}
-	}
-	
-	
-	public static function returnIdGarage(){
-		if (self::is_connected()){
-			$utilisateur = new users;
-			$utilisateur->getOneBy($_SESSION["session"], "session", "users");
-			return $utilisateur->result["id_garage"];
-		}else{
-			return FALSE;
-		}
-	}
-	
-	public static function returnTauxTva(){
-		if (self::is_connected()){
-			$garage = new garage;
-			$garage->getOneBy(self::returnIdGarage(), "id", "garage");
-			return $garage->result["taux_tva"];
-		}else{
-			return FALSE;
-		}
-	}
-	
 	public static function returnId(){
 		if (self::is_connected()){
 			$utilisateur = new users;
@@ -116,85 +69,10 @@ class security{
 		exit;
 	}
 	
-	public static function get_id_by_api($api_key){
-			$utilisateur = new users;
-			$utilisateur->getOneBy($api_key, "api_key", "users");
-            $utilisateur->setFromBdd($utilisateur->result);
-			if ($utilisateur->get_id() != ""){
-				return $utilisateur->get_id();
-			}else{
-				return FALSE;	
-			}
-	}
 	
-	public static function get_can_modify_user($id){
-			$utilisateur = new users;
-			$utilisateur->getOneBy($id, "id", "users");
-            $utilisateur->setFromBdd($utilisateur->result);
-			if ($utilisateur->get_can_modify_user() == 1){
-				return TRUE;
-			}else{
-				return FALSE;	
-			}
-	}
-	
-	public static function get_can_modify_facture($id){
-			$utilisateur = new users;
-			$utilisateur->getOneBy($id, "id", "users");
-            $utilisateur->setFromBdd($utilisateur->result);
-			if ($utilisateur->get_can_modify_facture() == 1){
-				return TRUE;
-			}else{
-				return FALSE;	
-			}
-	}
-	
-	public static function get_can_modify_cartegrise($id){
-			$utilisateur = new users;
-			$utilisateur->getOneBy($id, "id", "users");
-            $utilisateur->setFromBdd($utilisateur->result);
-			if ($utilisateur->get_can_modify_cartegrise() == 1){
-				return TRUE;
-			}else{
-				return FALSE;	
-			}
-	}
-	
-	public static function get_can_modify_societe($id){
-			$utilisateur = new users;
-			$utilisateur->getOneBy($id, "id", "users");
-            $utilisateur->setFromBdd($utilisateur->result);
-			if ($utilisateur->get_can_modify_societe() == 1){
-				return TRUE;
-			}else{
-				return FALSE;	
-			}
-	}
-	
-	public static function get_can_modify_prestations($id){
-			$utilisateur = new users;
-			$utilisateur->getOneBy($id, "id", "users");
-            $utilisateur->setFromBdd($utilisateur->result);
-			if ($utilisateur->get_can_modify_prestations() == 1){
-				return TRUE;
-			}else{
-				return FALSE;	
-			}
-	}
-	
-	public static function get_can_modify_cle($id){
-			$utilisateur = new users;
-			$utilisateur->getOneBy($id, "id", "users");
-            $utilisateur->setFromBdd($utilisateur->result);
-			if ($utilisateur->get_can_modify_cle() == 1){
-				return TRUE;
-			}else{
-				return FALSE;	
-			}
-	}
 	
 	public static function makePassword($pass){
-		return hash("sha256", "iiP8RAcljwO8bZ6W4Moo081j67M5q68Ke9kIn948H7Pn8x7F8499ihK2P6C55V3tveEs1ea1AZgUqNchK0X9q66Y86BvDK1YwA7yFirc5L8Kwl8Jb4vJvbE52sKo6CDI1rK7U3Y4X17R3YTT980k749w1O7r736o4j80kYN0YexEHM4VVhxUJlEWN48ypH49TLVBf7pX567Ih00wD3mPw65kt28HqaV23j7rAanrx91uvz5Mh48WHHE8pxJWf8S2UIt5xF103NJYMp6mmp91Wws34F96E5uTw2xiVCZZwG0mAmx2CVvOjRQXv3qt7m7ErLtMFq67X6RzhPux70H1aNhOIZkpLQg707K7f564U2ALlvOEwjbN8ibm2IIQjSwJm10vu08fdnQN8n5o".$pass."m5mm79J7D5T4q5Z2L8I6fxhWXc2wPZFz4h0009sy1qWx7LzGAUb3VETJiOFc967x51wU9dGrKR91sF7olhay1SlsLV3FkBRmb69wgC8N971r45nnS8ox772UM9HRWpn9DJX3f56u12m4BxVv3rE3JPXi6GqyQHd1uHZ5Yn3j59RtW96pfjRA6PT3J4yrKjD1RXAn4n4yK14Hi6qaIPK0Y7We28Ec5wK7k3M6cv7ys3sPudkAZh3BW1204q7jmPYbc690R8hx8FyP486uBDJ7Mm3R4791R86JCKv44t8mygeJC7Lf9L4qiRFWvAlc6z1rB99tCtOR3mEvH4oj6XELA71Hv55ZK9h8hrxXzp");
+		return hash("sha256", "9gc9EtkmnbsjhUsq9BTBSzYey74heg24DB9c0T94b49Jz2NiI58Z572JZ2EmNe0oojB2cxBv9D58029ts6FENSOEw3ZfnvWRZC7esbVYH2srNjmq8b9gyMN692TRD7965BO70dAKaxU0VYSuK153RVCJY93pl82uFIg8y36ar0drac4B43f3ItT5pX4FH36b91D46eSdmfjNmp9283253AuELQjnz09I7bCX31Ks6Cn1L2IU6ZkcX4ArBq6Y4RIh".$pass."hSQe3ll1Y0Dsk5j47RC4FvZcWZZQpDd5E6itpyGf07DtauyWVunP9IRQ37YiwuYMjqBs8eTqnL74k3wB541sVC6l21cH1Pk2xg85kVt463m2d7eqO0ocrMN4cXnO2y83125649r63hOFCU55JYE01Og91UMg8BeBZd5jpKU6RBbV0wMx1VXo83209F95NA64d3Kk88Wt6MKH7cRZ7bC4cYZ703K9i9ORR75v0rP5vZPx2pf1Du5rQDpqzBNb6nfj");
 	}
 	
 	public static function getPostValeurs($post){
