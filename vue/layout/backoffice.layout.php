@@ -207,6 +207,10 @@
 					<div class="row">
 					<div class="col-lg-8">
                      <div class="card">
+                        <div class="card-header">
+                            <h2>Vos clients</h2>
+                        </div>
+                        
                         <table id="data-table-command" class="table table-striped table-vmiddle">
                             <thead>
                                 <tr>
