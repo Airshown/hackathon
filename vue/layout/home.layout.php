@@ -58,6 +58,7 @@
         <div class="bloc-image"></div>
         <a href="/">
           <div class="bloc-content">
+            <h2 style="margin: 0px;">Visit</h2>
             <p>Gagnez pleins de cadeaux avec le système Visit by Best Western.</p>
           </div>
         </a>
