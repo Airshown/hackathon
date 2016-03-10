@@ -100,13 +100,12 @@
                 </div>
 
                 <ul class="main-menu">
-                    <li class="active">
+                    <li <?php if ($_SERVER['REQUEST_URI'] == "/backoffice") echo "class=\"active\""; ?>>
                         <a href="http://www.coteauto.net/backoffice"><i class="zmdi zmdi-home"></i> Accueil</a>
                     </li>
-                    <li><a href="http://www.coteauto.net/backoffice/notification"><i class="zmdi zmdi-format-underlined"></i> Notification</a></li>
+                    <li <?php if ($_SERVER['REQUEST_URI'] == "/backoffice/notification") echo "class=\"active\""; ?>><a href="http://www.coteauto.net/backoffice/notification"><i class="zmdi zmdi-format-underlined"></i> Notification</a></li>
                     <li class="sub-menu">
                         <a href=""><i class="zmdi zmdi-view-compact"></i> Headers</a>
-
                         <ul>
                             <li><a href="textual-menu.html">Textual menu</a></li>
                             <li><a href="image-logo.html">Image logo</a></li>
