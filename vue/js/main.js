@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
 
 	// Masque la barre internet sur mobile
-	window.addEventListener("load", function() { window. scrollTo(0, 0); });
+	window.scrollTo(0, 1);
 
 	var openPopupOne  	= $('#openPopupOne'),
 			overlay     		= $('.overlay'),
@@ -103,8 +103,8 @@ jQuery(document).ready(function($){
 		 }
 
     });
-	
-	setTimeout(function(){ 
+
+	setTimeout(function(){
 		document.getElementById("popupJs").style.visibility = "visible";
 		 }, 3000);
 
