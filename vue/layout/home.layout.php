@@ -64,7 +64,7 @@
 		<!-- cd-timeline -->
 
 		<footer>
-			<a class="footer-button" href="#"></a>
+			<!-- <a class="footer-button" href="#"></a> -->
 
 			<div class="item-menu">
 				<nav>
