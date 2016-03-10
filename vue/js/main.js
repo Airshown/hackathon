@@ -114,11 +114,13 @@ jQuery(document).ready(function($){
 						if(http.readyState == 4 && http.status == 200) {
 							if (http.responseText != ""){
 								var tableau = JSON.parse(http.responseText);
-								if (tableau[0].id != ""){
-									notification = tableau[0].id;
-									console.log(notification);
-									document.getElementById("popupJs").style.visibility = "visible";		
-								}}
+								if (tableau[0]){
+									if (tableau[0].id != ""){
+										notification = tableau[0].id;
+										document.getElementById("popupJs").style.visibility = "visible";		
+									}
+								}
+							}
 						}
 					}
 				http.send("");
