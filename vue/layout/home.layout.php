@@ -73,7 +73,7 @@
 
 						<li><a href="#" class="breakfast">Petit déjeuner</a></li>
 						<li><a href="#" class="map">Carte</a></li>
-						<li><a href="#" class="logo">Visit</a></li>
+						<li><a href="home" class="logo">Visit</a></li>
 						<li><a href="#" class="more">Plus</a></li>
 					</ul>
 				</nav>
