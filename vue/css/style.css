@@ -178,13 +178,13 @@ ul li:first-of-type button {
 
 .circl-smile {
   border-radius: 50%;
-  background: #75ce66;
+  /*background: #75ce66;*/
   padding: 25px;
 }
 
 .circl-sad {
   border-radius: 50%;
-  background: #c03b44;
+  /*background: #c03b44;*/
   padding: 25px;
 }
 
