@@ -368,7 +368,6 @@ footer {
 .item-menu {
   display: none;
   background: #fff;
-  margin: 20px 12px;
   overflow: hidden;
 }
 
@@ -377,9 +376,10 @@ footer {
   padding-top: 2.8em;
   margin: 1em 0.5em;
   font-size: 14.5px;
-  background-position: top center;
-  background-size: 3em auto;
-  width: 3em;
+  background-position: center top;
+  background-size: 1em auto;
+  background-repeat:  no-repeat;
+  width: 4em;
   height: 3em;
   float: left;
 }
@@ -390,43 +390,44 @@ footer {
 }
 
 .item-menu a.home {
-  background: url('../img/accueil.svg') no-repeat;
+  background-image: url('../img/accueil.svg');
+
 }
 
 .item-menu a.messages {
-  background: url('../img/messages.svg') no-repeat;
+  background-image: url('../img/messages.svg');
 }
 
 .item-menu a.conciergerie {
-  background: url('../img/conciergerie.svg') no-repeat;
+  background-image: url('../img/conciergerie.svg');
 }
 
 .item-menu a.logo {
-  background: url('../img/visit.svg') no-repeat;
+  background-image: url('../img/visit.svg');
 }
 
 .item-menu a.logo-active {
-  background: url('../img/visit-active.svg') no-repeat;
+  background-image: url('../img/visit-active.svg');
 }
 
 .item-menu a.more {
-  background: url('../img/plus.svg') no-repeat;
+  background-image: url('../img/plus.svg');
 }
 
 .item-menu a.visit {
-  background: url('../img/votre-sejour.svg') no-repeat;
+  background-image: url('../img/votre-sejour.svg');
 }
 
 .item-menu a.bar {
-  background: url('../img/bar.svg') no-repeat;
+  background-image: url('../img/bar.svg');
 }
 
 .item-menu a.breakfast {
-  background: url('../img/petit-dejeuner.svg') no-repeat;
+  background-image: url('../img/petit-dejeuner.svg');
 }
 
 .item-menu a.map {
-  background: url('../img/carte.svg') no-repeat;
+  background-image: url('../img/carte.svg');
 }
 
 #cd-timeline {
