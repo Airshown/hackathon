@@ -353,7 +353,7 @@ footer {
 
 .footer-button {
   background: white url('../img/burger.svg') no-repeat;
-  background-size: 1.5em auto;
+  background-size: 2.2em auto;
   background-position: center center;
   margin: 0 auto;
   display: block;
@@ -367,8 +367,10 @@ footer {
 
 .item-menu {
   display: none;
-  background: #fff;
+  background: #fDfDfD;
   overflow: hidden;
+  position: relative;
+  top: -2em;
 }
 
 .item-menu a {
@@ -377,7 +379,7 @@ footer {
   margin: 1em 0.5em;
   font-size: 12.5px;
   background-position: center top;
-  background-size: 1.5em auto;
+  background-size: 2.2em auto;
   background-repeat:  no-repeat;
   color: #061F5F;
   width: 4em;
