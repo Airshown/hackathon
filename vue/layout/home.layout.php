@@ -51,7 +51,7 @@
 			</div>
 	 	</header>
 
-		<div class="background-image-home"></div>
+		<div class="background-image home-background"></div>
 
 		<!-- <section id="cd-timeline" class="cd-container"> -->
       <div class="home-bloc-bottom">
@@ -89,7 +89,7 @@
 		</footer>
 
 		<script src="vue/js/jquery.js"></script>
-		<script src="vue/js/main.js"></script> <!-- Resource jQuery -->
+		<!-- <script src="vue/js/main.js"></script> -->
 
 	</body>
 </html>

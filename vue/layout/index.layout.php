@@ -110,6 +110,7 @@
 								break;
 							case 'Soutenance':
 								echo "bluecyan";
+								break;
 							default:
 								echo "orange";
 								break;
@@ -165,7 +166,7 @@
 			<div class="item-menu">
 				<nav>
 					<ul>
-						<li><a href="#" class="home">Accueil</a></li>
+						<li><a href="home" class="home">Accueil</a></li>
 						<li><a href="#" class="messages">Messages</a></li>
 						<li><a href="#" class="conciergerie">Repas</a></li>
 						<li><a href="#" class="visit">Votre séjour</a></li>

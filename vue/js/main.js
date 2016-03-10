@@ -31,6 +31,7 @@ jQuery(document).ready(function($){
 					if(http.readyState == 4 && http.status == 200) {
 
 						document.body.style.overflow = "initial";
+						location.reload();
 						if (http.responseText != "") {
 							//var tableau = JSON.parse(http.responseText);
 						}
@@ -51,6 +52,7 @@ jQuery(document).ready(function($){
 						if(http.readyState == 4 && http.status == 200) {
 
 							document.body.style.overflow = "initial";
+							location.reload();
 							if (http.responseText != ""){
 								//var tableau = JSON.parse(http.responseText);
 							}
