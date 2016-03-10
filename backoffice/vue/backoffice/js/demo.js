@@ -1,3 +1,6 @@
+var script_tag = document.getElementById("ouehr")
+var search_term = script_tag.getAttribute("class");
+
 $(window).load(function(){
     //Welcome Message (not for login page)
     function notify(message, type){
@@ -25,6 +28,6 @@ $(window).load(function(){
     };
     
     if (!$('.login-content')[0]) {
-        notify('Bienvenue Benjamin Button', 'inverse');
+        notify('Bienvenue '+search_term, 'inverse');
     } 
 });

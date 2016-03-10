@@ -4,17 +4,10 @@ class security{
 	public static function is_connected(){
 		if (isset($_SESSION['session'])){
 			$utilisateur = new users;
-			$utilisateur->getOneBy($_SESSION["session"], "session", "users");
+			$utilisateur->getOneBy($_SESSION["session"], "session", "user");
 			$utilisateur->setFromBdd($utilisateur->result);
-				if ($utilisateur->get_id() != 0 && $utilisateur->get_id_garage() != 0 && $utilisateur->get_is_activate() == 1){
-					$garage = new garage();
-					$garage->getOneBy($utilisateur->get_id_garage(), "id", "garage");
-					$garage->setFromBdd($garage->result);
-					if ($garage->get_is_actif() == 1){
-						return TRUE;
-					}else{
-						return FALSE;
-					}
+				if ($utilisateur->get_id() != 0 ){
+						return $utilisateur->get_is_admin();
 				}else{
 					return FALSE;
 				}
@@ -26,7 +19,7 @@ class security{
 	public static function returnId(){
 		if (self::is_connected()){
 			$utilisateur = new users;
-			$utilisateur->getOneBy($_SESSION["session"], "session", "users");
+			$utilisateur->getOneBy($_SESSION["session"], "session", "user");
 			return $utilisateur->result["id"];
 		}else{
 			return FALSE;
@@ -36,25 +29,23 @@ class security{
 	public static function connected($elements){
 		//Création d'une variable de session
 		//redirection
-		$utilisateur = new users;
+		$utilisateur = new user;
 		$elements = security::sanitize($elements);
-		$utilisateur->getOneBy($elements["email"], "email", "users");
+		$utilisateur->getOneBy($elements["email"], "email", "user");
 		$utilisateur->setFromBdd($utilisateur->result);
-		if ($utilisateur->get_password() == self::makePassword($elements["password"]) && $utilisateur->get_is_activate() == 1){
+		if ($utilisateur->get_password() == self::makePassword($elements["password"]) && $utilisateur->get_is_admin() == 1){
 			$uniqid = fonctions::id_aleatoire();
 			$_SESSION['session'] = $uniqid;
-			$_SESSION['nomUtilisateur'] = $utilisateur->get_prenom();
-			$_SESSION['mdp_generate'] = $utilisateur->get_mdp_generate();
+			$_SESSION['nomUtilisateur'] = $utilisateur->get_prenom()." ".$utilisateur->get_nom();
 			$utilisateur->set_session($uniqid);
-			$utilisateur->set_token_validation("");
-			$utilisateur->save("users");
+			$utilisateur->save("user");
 			header('HTTP/1.0 302 Found');
-			header("Location: ".ADRESSE_SITE."/index");
+			header("Location: http://www.coteauto.net/backoffice/index");
 			exit;
 		}else{
 			$_SESSION['erreur'] = "Il est impossible de vous identifier avec les identifiants saisis";
 			header('HTTP/1.0 302 Found');
-			header("Location: ".ADRESSE_SITE."/login/quickLogin");
+			header("Location: http://www.coteauto.net/backoffice/login");
 			exit;
 		}
 	}	

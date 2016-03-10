@@ -7,6 +7,10 @@ class user extends bdd{
 	protected $email;
 	protected $code_postal;
 	protected $ville;
+	protected $is_admin;
+	protected $hotel;
+	protected $session;
+	protected $password;
 	
 				
 	public function __construct(){
@@ -43,6 +47,22 @@ class user extends bdd{
 		return $this->ville;
 	}
 	
+	public function get_is_admin(){
+		return $this->is_admin;
+	}
+	
+	public function get_hotel(){
+		return $this->hotel;
+	}
+	
+	public function get_session(){
+		return $this->session;
+	}
+	
+	public function get_password(){
+		return $this->password;
+	}
+	
 	public function set_id($id){
 		$this->id = $id;
 	}
@@ -65,6 +85,22 @@ class user extends bdd{
 	
 	public function set_ville($ville){
 		$this->ville = $ville;
+	}
+	
+	public function set_is_admin($is_admin){
+		$this->is_admin = $is_admin;
+	}
+	
+	public function set_hotel($hotel){
+		$this->hotel = $hotel;
+	}
+	
+	public function set_session($session){
+		$this->session = $session;
+	}
+	
+	public function set_password($password){
+		$this->password = $password;
 	}
 }
 	

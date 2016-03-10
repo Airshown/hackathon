@@ -77,7 +77,7 @@
                         </div>
 
                         <div class="profile-info">
-                            Benjamin Button
+                            <?php echo $_SESSION['nomUtilisateur']; ?>
 
                             <i class="zmdi zmdi-caret-down"></i>
                         </div>
@@ -306,7 +306,7 @@
         
         <script src="vue/backoffice/js/charts.js"></script>
         <script src="vue/backoffice/js/functions.js"></script>
-        <script src="vue/backoffice/js/demo.js"></script>
+        <script src="vue/backoffice/js/demo.js" class="<?php echo $_SESSION['nomUtilisateur']; ?>" id="ouehr"></script>
 <script type="text/javascript">
             $(document).ready(function(){
                 //Basic Example
