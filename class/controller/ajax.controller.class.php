@@ -16,4 +16,11 @@ class ajax
 		$feeling->set_date_heure(date('Y-m-d H:i:s'));
 		$feeling->save("feeling");
     }
+	
+	public function test($args)
+    {
+		//$args[1];
+		header("Access-Control-Allow-Origin: *");
+		
+    }
 }
