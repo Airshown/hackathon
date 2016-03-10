@@ -3,7 +3,7 @@ class security{
 		
 	public static function is_connected(){
 		if (isset($_SESSION['session'])){
-			$utilisateur = new users;
+			$utilisateur = new user;
 			$utilisateur->getOneBy($_SESSION["session"], "session", "user");
 			$utilisateur->setFromBdd($utilisateur->result);
 				if ($utilisateur->get_id() != 0 ){
