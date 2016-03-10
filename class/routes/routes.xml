@@ -6,14 +6,14 @@
 		<action>defaultPage</action>
 	</route>
 	<route>
-		<url>^/backoffice$</url>
-		<controller>backoffice</controller>
-		<action>defaultPage</action>
-	</route>
-	<route>
 		<url>^/backoffice/notification$</url>
 		<controller>backoffice</controller>
 		<action>notification</action>
+	</route>
+	<route>
+		<url>^/backoffice/index$</url>
+		<controller>backoffice</controller>
+		<action>defaultPage</action>
 	</route>
 	<route>
 		<url>^/ajax/popup/(.*)/(.*)$</url>
