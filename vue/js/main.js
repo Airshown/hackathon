@@ -122,6 +122,7 @@ jQuery(document).ready(function($){
 									if (tableau[0].id != ""){
 										notification = tableau[0].id;
 										document.getElementById("popupJs").style.visibility = "visible";
+										document.getElementById("typeActivite").innerHTML = tableau[0].name;
 										document.body.style.overflow = "hidden";
 									}
 								}

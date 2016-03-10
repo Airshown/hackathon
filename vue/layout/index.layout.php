@@ -76,6 +76,7 @@
 				 </div>
 
 					<h3>Activité terminée!</h3>
+					<p id="typeActivite"></p>
 					<p>Avez-vous apprécié ?</p>
 
 					<ul>
