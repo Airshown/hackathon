@@ -47,12 +47,11 @@
         <input type="text" placeholder=" Rechercher">
 			</div>
 			<div id="droite">
-				<img style="width: 45px; padding: 10px;" src="vue/img/loupe.svg">
-        <!-- <img style="width: 45px; padding: 10px;" src="vue/img/loupe.svg"> -->
+        <img style="width: 45px; padding: 10px;" src="vue/img/weather.png">
 			</div>
 	 	</header>
 
-		<div class="background-image"></div>
+		<div class="background-image-home"></div>
 
 		<!-- <section id="cd-timeline" class="cd-container"> -->
       <div class="home-bloc-bottom">

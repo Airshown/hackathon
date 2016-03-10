@@ -32,6 +32,10 @@ body {
   z-index: 1;
 }
 
+.background-image-home {
+  background-image: url('../img/background-home.jpg');
+}
+
 .lockscreen {
   overflow: hidden;
 }
@@ -317,6 +321,11 @@ header h1 small{
 	height: 50px;
 }
 
+#gauche img{
+  width: 74px;
+  padding: 5px 0 0 15px;
+}
+
 #droite{
 	z-index: 8;
 	position:relative;
@@ -350,7 +359,8 @@ header h1 small{
 .bloc-content {
   padding: 0 1em;
   float: left;
-  width: 75%;
+  width: 79%;
+  text-align: justify;
 }
 
 footer {
