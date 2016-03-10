@@ -47,7 +47,7 @@
         <input type="text" placeholder=" Rechercher">
 			</div>
 			<div id="droite">
-        <img style="width: 45px; padding: 10px;" src="vue/img/weather.png">
+        <img src="vue/img/weather.png">
 			</div>
 	 	</header>
 
