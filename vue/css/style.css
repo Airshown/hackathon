@@ -68,7 +68,7 @@ h1, h2, h3 {
 
 .title-link {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.35em;
   text-transform: uppercase;
 }
 
@@ -272,7 +272,7 @@ input{
   margin-top: 3.5em;
 }
 header {
-	height: 50px;
+	height: 44px;
   background: #021f65;
   overflow: hidden;
   white-space: nowrap;
