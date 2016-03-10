@@ -74,7 +74,7 @@
 			<div style="display: block;" class="item-menu">
 				<nav>
 					<ul>
-						<li class="active"><a href="#" class="home active">Accueil</a></li>
+						<li class="active"><a href="#" class="home-active active">Accueil</a></li>
 						<li><a href="#" class="messages">Messages</a></li>
 						<li><a href="#" class="conciergerie">Repas</a></li>
 						<li><a href="#" class="visit">Votre séjour</a></li>
