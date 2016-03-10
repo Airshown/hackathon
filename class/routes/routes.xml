@@ -15,4 +15,9 @@
 		<controller>ajax</controller>
 		<action>popup</action>
 	</route>
+	<route>
+		<url>^/ajax/notif/(.*)$</url>
+		<controller>ajax</controller>
+		<action>notif</action>
+	</route>
 </routes>

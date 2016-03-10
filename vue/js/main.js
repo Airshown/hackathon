@@ -103,8 +103,19 @@ jQuery(document).ready(function($){
 		 }
 
     });
-
-	setTimeout(function(){
+	
+	setTimeout(function(){ 
+		var http = new XMLHttpRequest();
+					http.open("POST", "http://www.coteauto.net/ajax/notif/", true);
+					http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+					http.onreadystatechange = function() {
+						if(http.readyState == 4 && http.status == 200) {
+							if (http.responseText != ""){
+								//var tableau = JSON.parse(http.responseText);
+							}
+						}
+					}
+				http.send("");
 		document.getElementById("popupJs").style.visibility = "visible";
 		 }, 3000);
 
