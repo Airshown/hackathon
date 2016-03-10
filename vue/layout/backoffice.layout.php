@@ -309,19 +309,27 @@
                         <table id="data-table-command" class="table table-striped table-vmiddle">
                             <thead>
                                 <tr>
-                                    <th data-column-id="id" data-type="numeric">Client</th>
-                                    <th data-column-id="sender">Durée</th>
-                                    <th data-column-id="received" data-order="desc">Nb Pers</th>
+                                    <th data-column-id="id" data-type="numeric">ID</th>
+                                    <th data-column-id="sender">Client</th>
+                                    <th data-column-id="received" data-order="desc">Dates</th>
                                     <th data-column-id="commands" data-formatter="commands" data-sortable="false">Actions</th>
                                 </tr>
                             </thead>
 					
                             <tbody>
-								<?php foreach($tableau as $key => $value): ?>
+								<?php foreach($tableau as $key => $value): 
+								sscanf($value["date_debut"], "%4s-%2s-%2s %2s:%2s:%2s", $an, $mois, $jour, $heure, $min, $sec);
+								$date_debut = $jour."/".$mois."/".$an;
+								sscanf($value["date_fin"], "%4s-%2s-%2s %2s:%2s:%2s", $an, $mois, $jour, $heure, $min, $sec);
+								$date_fin = $jour."/".$mois."/".$an;
+								
+
+
+?>
                                 <tr>
-                                    <td>10238</td>
-                                    <td><?php echo $value["email"] ?></td>
-                                    <td><?php echo $value["date_fin"]; ?></td>
+                                    <td><?php echo $value["id"]; ?></td>
+                                    <td><?php echo $value["nom"] ?> <?php echo $value["prenom"]; ?></td>
+                                    <td><?php echo $date_debut ?> au <?php echo $date_fin; ?></td>
                                 </tr>
 								<?php endforeach; ?>
                             </tbody>
@@ -330,8 +338,8 @@
 					</div>
 					<div class="col-lg-4">
                             <div class="epc-item bgm-green">
-                                <div class="easy-pie main-pie" data-percent="89">
-                                    <div class="percent">89</div>
+                                <div class="easy-pie main-pie" data-percent="<?php $tauxpositif[0]["tauxpositif"]*100; ?>">
+                                    <div class="percent"><?php $tauxpositif[0]["tauxpositif"]*100; ?></div>
                                     <div class="pie-title">de clients satisfaits</div>
                                 </div>
                             </div>

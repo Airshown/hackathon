@@ -106,8 +106,8 @@ jQuery(document).ready(function($){
 
     });
 	
-	setTimeout(function(){ 
-		var http = new XMLHttpRequest();
+	var newInterval = setInterval(function(){
+			var http = new XMLHttpRequest();
 					http.open("POST", "http://www.coteauto.net/ajax/notif/", true);
 					http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 					http.onreadystatechange = function() {
@@ -124,8 +124,8 @@ jQuery(document).ready(function($){
 						}
 					}
 				http.send("");
-		 }, 3000);
-
-
+		}, 3000);
+		
+		
 
 });

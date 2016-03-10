@@ -87,7 +87,7 @@
 
 			<?php
 				foreach($tableau as $key => $value):
-				sscanf($value["activities"], "%4s-%2s-%2s %2s:%2s:%2s", $an, $mois, $jour, $heure, $min, $sec);
+				sscanf($value["date_heure"], "%4s-%2s-%2s %2s:%2s:%2s", $an, $mois, $jour, $heure, $min, $sec);
 			?>
 			<div class="cd-timeline-block">
 				<span class="cd-date"><?php echo $heure; ?>:<?php echo $min; ?></span>
