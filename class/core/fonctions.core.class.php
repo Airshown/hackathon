@@ -43,17 +43,6 @@ class fonctions
         }
         return $retour;
     }
-	
-    public static function api_key()
-    {
-        $elements = "abcdefghijklmnopqrstuvwxyz0123456789AZERTYUIOPMLKJHGFDSQWXCVBN";
-        $retour   = "";
-        srand(time());
-        for ($ligne = 0; $ligne < 255; $ligne++) {
-            $retour .= substr($elements, (rand() % (strlen($elements))), 1);
-        }
-        return $retour;
-    }
     
     public static function genereMdp()
     {
