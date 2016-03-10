@@ -345,7 +345,7 @@
                             </div>
 							
 							<div class="epc-item bgm-blue" style="color: white; font-size: 36px; text-align: left !important;">
-                               88 <span style="font-size:16px">clients sur Visit</span>
+                               <?php echo $nombrevisites[0]["nombre"]; ?> <span style="font-size:16px">clients sur Visit</span>
                             </div>
 							
 							<div class="epc-item bgm-orange" style="color: white; font-size: 24px; text-align: left !important;">
