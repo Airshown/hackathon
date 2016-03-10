@@ -43,10 +43,13 @@
 
 		<header>
 			<div id="gauche" style="padding: 10px;">
+        <img src="vue/img/logo-apple.png">
 		 		<a class="title-link" href="#">BEST WESTERN A La Villa des Artistes ***</a>
+        <input type="text" placeholder=" Rechercher">
 			</div>
 			<div id="droite">
 				<img style="width: 45px; padding: 10px;" src="vue/img/loupe.svg">
+        <!-- <img style="width: 45px; padding: 10px;" src="vue/img/loupe.svg"> -->
 			</div>
 	 	</header>
 
@@ -61,7 +64,7 @@
 		<!-- cd-timeline -->
 
 		<footer>
-			<a class="footer-button" href="#"></a>
+			<!-- <a class="footer-button" href="#"></a> -->
 
 			<div class="item-menu">
 				<nav>
@@ -73,7 +76,7 @@
 
 						<li><a href="#" class="breakfast">Petit déjeuner</a></li>
 						<li><a href="#" class="map">Carte</a></li>
-						<li><a href="home" class="logo">Visit</a></li>
+						<li><a href="/" class="logo">Visit</a></li>
 						<li><a href="#" class="more">Plus</a></li>
 					</ul>
 				</nav>

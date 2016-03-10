@@ -43,7 +43,7 @@
 
 		<header>
 			<div id="gauche" style="padding: 10px;">
-		 		<a class="title-link" href="#">< Retour sur l'accueil</a>
+		 		<a class="title-link" href="/home">< Retour sur l'accueil</a>
 			</div>
 			<div id="droite">
 				<img style="width: 45px; padding: 10px;" src="vue/img/loupe.svg">
@@ -51,7 +51,7 @@
 	 	</header>
 
 		<div class="background-image"></div>
-		<div class="mask"></div>
+
 		<!-- Début de la section des évènements de la timeline -->
 		<section id="cd-timeline" class="cd-container">
 
@@ -166,7 +166,7 @@
 
 						<li><a href="#" class="breakfast">Petit déjeuner</a></li>
 						<li><a href="#" class="map">Carte</a></li>
-						<li><a href="#" class="logo-active active">Visit</a></li>
+						<li class="active"><a href="#" class="logo-active">Visit</a></li>
 						<li><a href="#" class="more">Plus</a></li>
 					</ul>
 				</nav>
