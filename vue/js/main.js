@@ -100,6 +100,10 @@ jQuery(document).ready(function($){
 		 }
 
     });
+	
+	setTimeout(function(){ 
+		document.getElementById("popupJs").style.visibility = "visible";
+		 }, 3000);
 
 
 

@@ -44,7 +44,7 @@
 			</div> -->
 
 			<!-- Popup de sélection de satisfaction -->
-			<div class="container">
+			<div class="container" id="popupJs">
 				<div class="overlay"></div>
 				<div class="popup one activity">
 				 <div class="cd-timeline-img centered cd-green">
