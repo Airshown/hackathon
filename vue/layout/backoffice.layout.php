@@ -338,8 +338,8 @@
 					</div>
 					<div class="col-lg-4">
                             <div class="epc-item bgm-green">
-                                <div class="easy-pie main-pie" data-percent="<?php $tauxpositif[0]["tauxpositif"]*100; ?>">
-                                    <div class="percent"><?php $tauxpositif[0]["tauxpositif"]*100; ?></div>
+                                <div class="easy-pie main-pie" data-percent="<?php echo $tauxpositif[0]["tauxpositif"]*100; ?>">
+                                    <div class="percent"><?php echo $tauxpositif[0]["tauxpositif"]*100; ?></div>
                                     <div class="pie-title">de clients satisfaits</div>
                                 </div>
                             </div>
