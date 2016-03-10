@@ -113,7 +113,7 @@
 						}?>"> <img src="vue/img/<?php
 							switch($name) {
 								case 'Restaurant':
-									echo "coffee";
+									echo "eat";
 									break;
 								case 'Piscine':
 									echo "swim";
