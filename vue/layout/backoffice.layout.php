@@ -7,15 +7,15 @@
         <title>Visit by Best Western Admin</title>
 
         <!-- Vendor CSS -->
-        <link href="http://www.coteauto.net/vue/backoffice/vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
-        <link href="http://www.coteauto.net/vue/backoffice/vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
-        <link href="http://www.coteauto.net/vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" rel="stylesheet">
-        <link href="http://www.coteauto.net/vue/backoffice/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
-        <link href="http://www.coteauto.net/vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">        
+        <link href="vue/backoffice/vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+        <link href="vue/backoffice/vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" rel="stylesheet">
+        <link href="vue/backoffice/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">        
             
         <!-- CSS -->
-        <link href="http://www.coteauto.net/vue/backoffice/css/app.min.1.css" rel="stylesheet">
-        <link href="http://www.coteauto.net/vue/backoffice/css/app.min.2.css" rel="stylesheet">
+        <link href="vue/backoffice/css/app.min.1.css" rel="stylesheet">
+        <link href="vue/backoffice/css/app.min.2.css" rel="stylesheet">
         
     </head>
     <body>
@@ -73,7 +73,7 @@
                 <div class="profile-menu">
                     <a href="">
                         <div class="profile-pic">
-                            <img src="http://www.coteauto.net/vue/backoffice/img/profile-pics/1.jpg" alt="">
+                            <img src="vue/backoffice/img/profile-pics/1.jpg" alt="">
                         </div>
 
                         <div class="profile-info">
@@ -128,7 +128,7 @@
                     <a class="lv-item" href="">
                         <div class="media">
                             <div class="pull-left">
-                                <img class="lv-img-sm" src="http://www.coteauto.net/vue/backoffice/img/profile-pics/1.jpg" alt="">
+                                <img class="lv-img-sm" src="vue/backoffice/img/profile-pics/1.jpg" alt="">
                             </div>
                             <div class="media-body">
                                 <div class="lv-title">David Belle</div>
@@ -140,7 +140,7 @@
                     <a class="lv-item" href="">
                         <div class="media">
                             <div class="pull-left p-relative">
-                                <img class="lv-img-sm" src="http://www.coteauto.net/vue/backoffice/img/profile-pics/3.jpg" alt="">
+                                <img class="lv-img-sm" src="vue/backoffice/img/profile-pics/3.jpg" alt="">
                                 <i class="chat-status-online"></i>
                             </div>
                             <div class="media-body">
@@ -153,7 +153,7 @@
                     <a class="lv-item" href="">
                         <div class="media">
                             <div class="pull-left p-relative">
-                                <img class="lv-img-sm" src="http://www.coteauto.net/vue/backoffice/img/profile-pics/4.jpg" alt="">
+                                <img class="lv-img-sm" src="vue/backoffice/img/profile-pics/4.jpg" alt="">
                                 <i class="chat-status-online"></i>
                             </div>
                             <div class="media-body">
@@ -166,7 +166,7 @@
                     <a class="lv-item" href="">
                         <div class="media">
                             <div class="pull-left">
-                                <img class="lv-img-sm" src="http://www.coteauto.net/vue/backoffice/img/profile-pics/5.jpg" alt="">
+                                <img class="lv-img-sm" src="vue/backoffice/img/profile-pics/5.jpg" alt="">
                             </div>
                             <div class="media-body">
                                 <div class="lv-title">Bill Phillips</div>
@@ -178,7 +178,7 @@
                     <a class="lv-item" href="">
                         <div class="media">
                             <div class="pull-left">
-                                <img class="lv-img-sm" src="http://www.coteauto.net/vue/backoffice/img/profile-pics/6.jpg" alt="">
+                                <img class="lv-img-sm" src="vue/backoffice/img/profile-pics/6.jpg" alt="">
                             </div>
                             <div class="media-body">
                                 <div class="lv-title">Wendy Mitchell</div>
@@ -189,7 +189,7 @@
                     <a class="lv-item" href="">
                         <div class="media">
                             <div class="pull-left p-relative">
-                                <img class="lv-img-sm" src="http://www.coteauto.net/vue/backoffice/img/profile-pics/7.jpg" alt="">
+                                <img class="lv-img-sm" src="vue/backoffice/img/profile-pics/7.jpg" alt="">
                                 <i class="chat-status-busy"></i>
                             </div>
                             <div class="media-body">
@@ -235,31 +235,31 @@
                     <ul class="iew-download">
                         <li>
                             <a href="http://www.google.com/chrome/">
-                                <img src="http://www.coteauto.net/vue/backoffice/img/browsers/chrome.png" alt="">
+                                <img src="vue/backoffice/img/browsers/chrome.png" alt="">
                                 <div>Chrome</div>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.mozilla.org/en-US/firefox/new/">
-                                <img src="http://www.coteauto.net/vue/backoffice/img/browsers/firefox.png" alt="">
+                                <img src="vue/backoffice/img/browsers/firefox.png" alt="">
                                 <div>Firefox</div>
                             </a>
                         </li>
                         <li>
                             <a href="http://www.opera.com">
-                                <img src="http://www.coteauto.net/vue/backoffice/img/browsers/opera.png" alt="">
+                                <img src="vue/backoffice/img/browsers/opera.png" alt="">
                                 <div>Opera</div>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.apple.com/safari/">
-                                <img src="http://www.coteauto.net/vue/backoffice/img/browsers/safari.png" alt="">
+                                <img src="vue/backoffice/img/browsers/safari.png" alt="">
                                 <div>Safari</div>
                             </a>
                         </li>
                         <li>
                             <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                                <img src="http://www.coteauto.net/vue/backoffice/img/browsers/ie.png" alt="">
+                                <img src="vue/backoffice/img/browsers/ie.png" alt="">
                                 <div>IE (New)</div>
                             </a>
                         </li>
@@ -272,41 +272,41 @@
         <!-- Javascript Libraries -->
 		
 		  <!-- Javascript Libraries -->
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/Waves/dist/waves.min.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>  
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bootgrid/jquery.bootgrid.updated.min.js"></script>		
+        <script src="vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vue/backoffice/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>  
+        <script src="vue/backoffice/vendors/bootgrid/jquery.bootgrid.updated.min.js"></script>		
 
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/flot/jquery.flot.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/flot/jquery.flot.resize.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/sparklines/jquery.sparkline.min.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/flot/jquery.flot.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/flot/jquery.flot.resize.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
+        <script src="vue/backoffice/vendors/sparklines/jquery.sparkline.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
         
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/moment/min/moment.min.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/fullcalendar/dist/fullcalendar.min.js "></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/Waves/dist/waves.min.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/moment/min/moment.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/fullcalendar/dist/fullcalendar.min.js "></script>
+        <script src="vue/backoffice/vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vue/backoffice/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
         
         <!-- Placeholder for IE9 -->
         <!--[if IE 9 ]>
-            <script src="http://www.coteauto.net/vue/backoffice/vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+            <script src="vue/backoffice/vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
         <![endif]-->
         
-        <script src="http://www.coteauto.net/vue/backoffice/js/flot-charts/curved-line-chart.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/js/flot-charts/line-chart.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/js/charts.js"></script>
+        <script src="vue/backoffice/js/flot-charts/curved-line-chart.js"></script>
+        <script src="vue/backoffice/js/flot-charts/line-chart.js"></script>
+        <script src="vue/backoffice/js/charts.js"></script>
         
-        <script src="http://www.coteauto.net/vue/backoffice/js/charts.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/js/functions.js"></script>
-        <script src="http://www.coteauto.net/vue/backoffice/js/demo.js"></script>
+        <script src="vue/backoffice/js/charts.js"></script>
+        <script src="vue/backoffice/js/functions.js"></script>
+        <script src="vue/backoffice/js/demo.js"></script>
 <script type="text/javascript">
             $(document).ready(function(){
                 //Basic Example
