@@ -71,28 +71,8 @@
 			<div class="container" id="popupJs">
 				<div class="overlay"></div>
 				<div class="popup one activity">
-				 <div class="cd-timeline-img centered cd-green">
-					 <img src="vue/img/<?php
-						 switch($name) {
-							 case 'Restaurant':
-								 echo "eat";
-								 break;
-							 case 'Piscine':
-								 echo "swim";
-								 break;
-							 case 'Petit Dejeuner':
-								 echo "coffee";
-								 break;
-							 case 'Reveil':
-								 echo "sleep";
-								 break;
-							 case 'Soutenance':
-								 echo "book";
-								 break;
-							 default:
-								 break;
-						 }
-					 ?>.svg" alt="Activité en cours">
+				 <div id="modifyClass" class="cd-timeline-img centered">
+					 <img id="current-activity"  alt="Activité en cours">
 				 </div>
 
 					<h3>Activité terminée!</h3>
@@ -128,6 +108,8 @@
 							case 'Reveil':
 								echo "purple";
 								break;
+							case 'Soutenance':
+								echo "orange";
 							default:
 								echo "orange";
 								break;
