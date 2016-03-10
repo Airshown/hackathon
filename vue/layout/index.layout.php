@@ -7,7 +7,24 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="transparent" />
 
-		<link	rel="apple-touch-icon" href="vue/img/logo-apple.png"/>
+		<link rel="apple-touch-icon" sizes="57x57" href="vue/css/icons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="vue/css/icons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="vue/css/icons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="vue/css/icons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="vue/css/icons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="vue/css/icons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="vue/css/icons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="vue/css/icons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="vue/css/icons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="vue/css/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="vue/css/icons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="vue/css/icons/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="vue/css/icons/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
 		<link href='vue/css/css.css' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="vue/css/reset.css">
 
@@ -17,7 +34,7 @@
 		<!-- Resource style -->
 		<script src="vue/js/modernizr.js"></script><!-- Modernizr -->
 
-		<title>E-conciergerie</title>
+		<title>eConciergerie</title>
 	</head>
 
 	<body>
@@ -99,15 +116,19 @@
 			<a class="footer-button" href="#"></a>
 
 			<div class="item-menu">
-				<a href="#" class="home">Accueil</a>
-				<a href="#" class="messages">Messages</a>
-				<a href="#" class="conciergerie">Conciergerie</a>
-				<a href="#" class="visit">Votre séjour</a>
+				<nav>
+					<ul>
+						<li><a href="#" class="home">Accueil</a></li>
+						<li><a href="#" class="messages">Messages</a></li>
+						<li><a href="#" class="conciergerie">Conciergerie</a></li>
+						<li><a href="#" class="visit">Votre séjour</a></li>
 
-				<a href="#" class="breakfast">Petit déjeuner</a>
-				<a href="#" class="map">Carte</a>
-				<a href="#" class="logo">Visit</a>
-				<a href="#" class="more">Plus</a>
+						<li><a href="#" class="breakfast">Petit déjeuner</a></li>
+						<li><a href="#" class="map">Carte</a></li>
+						<li><a href="#" class="logo">Visit</a></li>
+						<li><a href="#" class="more">Plus</a></li>
+					</ul>
+				</nav>
 			</div>
 		</footer>
 
