@@ -1,8 +1,3 @@
-<?php
-print_r($tableau);
-?>
-
-
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9"><![endif]-->
     <head>
