@@ -3,10 +3,6 @@ session_start();
 date_default_timezone_set("Europe/Paris");
 include_once("class/core/constantes.core.php");
 include_once("class/core/routes.core.class.php");
-include_once rtrim($_SERVER['DOCUMENT_ROOT'], DIRECTORY_SEPARATOR) . '/class/form/Form.php';
-include_once rtrim($_SERVER['DOCUMENT_ROOT'], DIRECTORY_SEPARATOR) . '/class/form/Validator/Validator.php';
-include_once rtrim($_SERVER['DOCUMENT_ROOT'], DIRECTORY_SEPARATOR) . '/class/form/Validator/Exception.php';
-include_once rtrim($_SERVER['DOCUMENT_ROOT'], DIRECTORY_SEPARATOR) . '/class/excel/PHPExcel.php';
 
 spl_autoload_register( function($class_name) {
     if (file_exists("class/controller/" . $class_name . ".controller.class.php"))
