@@ -20,7 +20,7 @@ body {
   color: #7f8c97;
   background-color: #e9f0f5;
   /*Attention à modifier*/
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .background-image {
@@ -68,7 +68,7 @@ h1, h2, h3 {
 
 .title-link {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.35em;
+  font-size: 1.49em;
   text-transform: uppercase;
 }
 
@@ -303,7 +303,7 @@ header h1 {
 }
 
 header input{
-	margin-left: 10px;
+	margin-left: 7px;
 }
 
 header h1 small{
@@ -347,7 +347,7 @@ header h1 small{
 #droite img{
 	width: 60px;
 	float:right;
-  margin-top: 9px;
+  margin-top: 11px;
 }
 
 .bloc-image {
