@@ -349,7 +349,7 @@
                             </div>
 							
 							<div class="epc-item bgm-orange" style="color: white; font-size: 24px; text-align: left !important;">
-                               <i class="zmdi zmdi-pin zmdi-hc-fw"></i> Réception<br><span style="font-size:16px">Lieu le plus fréquenté</span>
+                               <i class="zmdi zmdi-pin zmdi-hc-fw"></i> <?php echo $visite[0]["name"]; ?><br><span style="font-size:16px">Lieu le plus fréquenté</span>
                             </div>
                         </div>
 					</div>
