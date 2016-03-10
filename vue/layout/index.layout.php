@@ -134,10 +134,10 @@
 				<div class="cd-timeline-content">
 					<h2 class="center"><?php echo $value["name"]; ?></h2>
 					<!-- <div class="cd-timeline-img centered cd-red"> -->
-					<?php if(): ?>
-						<img class="cd-timeline-sad" src="img/boy-normal.svg" alt="Non satisfait">
+					<?php if($value["type"] == "sad"): ?>
+						<img class="cd-timeline-sad" src="vue/img/boy-normal.svg" alt="Non satisfait">
 					<?php else: ?>
-						<img class="cd-timeline-happy" src="img/boy-smile.svg" alt="Satisfait">
+						<img class="cd-timeline-happy" src="vue/img/boy-smile.svg" alt="Satisfait">
 					<?php endif; ?>
 					<!-- </div>  -->
 				</div>
