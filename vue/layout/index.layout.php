@@ -46,7 +46,7 @@
 		 		<a class="title-link" href="/home">< Retour sur l'accueil</a>
 			</div>
 			<div id="droite">
-				<img style="width: 45px; padding: 10px;" src="vue/img/loupe.svg">
+				<img style="width: 38px; padding-right: 15px;" src="vue/img/loupe.svg">
 			</div>
 	 	</header>
 
