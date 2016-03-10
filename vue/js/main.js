@@ -3,6 +3,8 @@ jQuery(document).ready(function($){
 	// Masque la barre internet sur mobile
 	window.scrollTo(0, 1);
 
+	var notification;
+	
 	var openPopupOne  	= $('#openPopupOne'),
 			overlay     		= $('.overlay'),
 			popup       		= $('.popup'),
@@ -23,7 +25,7 @@ jQuery(document).ready(function($){
 			popup.toggleClass('oneOpen').delay(700).promise().done(function () {
 				$(this).hide();
 				var http = new XMLHttpRequest();
-				http.open("POST", "http://www.coteauto.net/ajax/popup/smile", true);
+				http.open("POST", "http://www.coteauto.net/ajax/popup/smile/"+notification, true);
 				http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 				http.onreadystatechange = function() {
 					if(http.readyState == 4 && http.status == 200) {
@@ -41,7 +43,7 @@ jQuery(document).ready(function($){
 			popup.toggleClass('oneOpen').delay(700).promise().done(function () {
 					$(this).hide();
 					var http = new XMLHttpRequest();
-					http.open("POST", "http://www.coteauto.net/ajax/popup/sad", true);
+					http.open("POST", "http://www.coteauto.net/ajax/popup/sad/"+notification, true);
 					http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 					http.onreadystatechange = function() {
 						if(http.readyState == 4 && http.status == 200) {
@@ -111,12 +113,12 @@ jQuery(document).ready(function($){
 					http.onreadystatechange = function() {
 						if(http.readyState == 4 && http.status == 200) {
 							if (http.responseText != ""){
-								//var tableau = JSON.parse(http.responseText);
-							}
+								var tableau = JSON.parse(http.responseText);
+								notification = tableau.id;
+								document.getElementById("popupJs").style.visibility = "visible";							}
 						}
 					}
 				http.send("");
-		document.getElementById("popupJs").style.visibility = "visible";
 		 }, 3000);
 
 
