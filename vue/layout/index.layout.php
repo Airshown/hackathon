@@ -88,12 +88,12 @@
 			<?php
 				foreach($tableau as $key => $value):
 				sscanf($value["date_heure"], "%4s-%2s-%2s %2s:%2s:%2s", $an, $mois, $jour, $heure, $min, $sec);
+				$name = $value["name"];
 			?>
 			<div class="cd-timeline-block">
 				<span class="cd-date"><?php echo $heure; ?>:<?php echo $min; ?></span>
 				<a href="#" onclick="javascript:;">
-					<div class="cd-timeline-img cd-
-					<?php
+					<div class="cd-timeline-img cd-<?php
 						switch($name) {
 							case 'Restaurant':
 								echo "red";
@@ -104,15 +104,13 @@
 							case 'Petit Dejeuner':
 								echo "orange";
 								break;
-							case 'Réveil':
+							case 'Reveil':
 								echo "purple";
 								break;
 							default:
 								echo "orange";
 								break;
-						}
-					?>"> <img src="vue/img/
-						<?php
+						}?>"> <img src="vue/img/<?php
 							switch($name) {
 								case 'Restaurant':
 									echo "coffee";
@@ -123,14 +121,13 @@
 								case 'Petit Dejeuner':
 									echo "coffee";
 									break;
-								case 'Réveil':
+								case 'Reveil':
 									echo "sleep";
 									break;
 								default:
 									break;
 							}
-						?>
-						.svg" alt="<?php echo $name; ?>"> </div>
+						?>.svg" alt="<?php echo $value["name"]; ?>"> </div>
 					<!-- cd-timeline-img -->
 				</a>
 
