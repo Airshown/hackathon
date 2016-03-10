@@ -43,7 +43,9 @@
 
 		<header>
 			<div id="gauche" style="padding: 10px;">
+        <img src="vue/img/logo-apple.png">
 		 		<a class="title-link" href="#">BEST WESTERN A La Villa des Artistes ***</a>
+        <input type="text" placeholder=" Rechercher">
 			</div>
 			<div id="droite">
 				<img style="width: 45px; padding: 10px;" src="vue/img/loupe.svg">
