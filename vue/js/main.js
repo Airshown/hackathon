@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
 	window.scrollTo(0, 1);
 
 	var notification;
-	
+
 	var openPopupOne  	= $('#openPopupOne'),
 			overlay     		= $('.overlay'),
 			popup       		= $('.popup'),
@@ -29,7 +29,9 @@ jQuery(document).ready(function($){
 				http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 				http.onreadystatechange = function() {
 					if(http.readyState == 4 && http.status == 200) {
-						if (http.responseText != ""){
+
+						document.body.style.overflow = "initial";
+						if (http.responseText != "") {
 							//var tableau = JSON.parse(http.responseText);
 						}
 					}
@@ -47,6 +49,8 @@ jQuery(document).ready(function($){
 					http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 					http.onreadystatechange = function() {
 						if(http.readyState == 4 && http.status == 200) {
+
+							document.body.style.overflow = "initial";
 							if (http.responseText != ""){
 								//var tableau = JSON.parse(http.responseText);
 							}
@@ -105,8 +109,8 @@ jQuery(document).ready(function($){
 		 }
 
     });
-	
-	setTimeout(function(){ 
+
+	setTimeout(function(){
 		var http = new XMLHttpRequest();
 					http.open("POST", "http://www.coteauto.net/ajax/notif/", true);
 					http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -117,7 +121,8 @@ jQuery(document).ready(function($){
 								if (tableau[0]){
 									if (tableau[0].id != ""){
 										notification = tableau[0].id;
-										document.getElementById("popupJs").style.visibility = "visible";		
+										document.getElementById("popupJs").style.visibility = "visible";
+										document.body.style.overflow = "hidden";
 									}
 								}
 							}

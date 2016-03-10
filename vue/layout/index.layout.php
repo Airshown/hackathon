@@ -122,7 +122,7 @@
 					<ul>
 						<li><a href="#" class="home">Accueil</a></li>
 						<li><a href="#" class="messages">Messages</a></li>
-						<li><a href="#" class="conciergerie">Conciergerie</a></li>
+						<li><a href="#" class="conciergerie">Repas</a></li>
 						<li><a href="#" class="visit">Votre séjour</a></li>
 
 						<li><a href="#" class="breakfast">Petit déjeuner</a></li>
