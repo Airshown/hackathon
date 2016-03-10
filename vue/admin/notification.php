@@ -16,13 +16,6 @@
 											<?php endforeach; ?>
 										</select>
 									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											<i class="input-helper"></i>
-											Don't forget to check me out
-										</label>
-									</div>
 									
 									<button type="submit" class="btn btn-primary btn-sm m-t-10">Envoyer</button>
 								</form>
