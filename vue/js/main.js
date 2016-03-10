@@ -109,6 +109,7 @@ jQuery(document).ready(function($){
 		 }
 
     });
+	
 	var newInterval = setInterval(function(){
 			var http = new XMLHttpRequest();
 					http.open("POST", "http://www.coteauto.net/ajax/notif/", true);
