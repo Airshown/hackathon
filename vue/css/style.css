@@ -577,9 +577,16 @@ footer {
   margin: 15px auto;
   width: 37%;
   display: block;
-  background-color: #FFB300;
   padding: 10px;
   border-radius: 50%;
+}
+
+.cd-timeline-sad {
+  background-color: #FFB300;
+}
+
+.cd-timeline-happy {
+  background-color: #7CB342;
 }
 
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
