@@ -7,7 +7,7 @@ include_once rtrim($_SERVER['DOCUMENT_ROOT'], DIRECTORY_SEPARATOR) . '/class/for
 include_once rtrim($_SERVER['DOCUMENT_ROOT'], DIRECTORY_SEPARATOR) . '/class/form/Validator/Validator.php';
 include_once rtrim($_SERVER['DOCUMENT_ROOT'], DIRECTORY_SEPARATOR) . '/class/form/Validator/Exception.php';
 include_once rtrim($_SERVER['DOCUMENT_ROOT'], DIRECTORY_SEPARATOR) . '/class/excel/PHPExcel.php';
-		
+
 spl_autoload_register( function($class_name) {
     if (file_exists("class/controller/" . $class_name . ".controller.class.php"))
 	{

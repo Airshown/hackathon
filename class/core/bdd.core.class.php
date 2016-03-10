@@ -1,6 +1,6 @@
 <?php
 class bdd {
-	
+
 	private $bddhost = "51.255.69.91";
 	private $bddlogin = "usercote";
 	private $bddpass = "Hi4m3d1";
@@ -8,8 +8,8 @@ class bdd {
 	private $classe;
 	public $result = [];
 	protected $connexion;
-	
-	
+
+
 	public function __construct(){
 		self::Connection();
 		$this->classe = get_called_class();
@@ -25,7 +25,7 @@ class bdd {
 		}
 			$this->connexion = $conn;
 	}
-  
+
   	public function save($table){
 		$all_vars = array_keys(get_object_vars($this));
 		$pdo_vars = array_keys(get_class_vars(get_class()));
@@ -43,14 +43,14 @@ class bdd {
 				$array_to_execute[$var] = $this->$var;
 			}
 			$sql = "INSERT INTO ".$table."
-					( ". implode(", ", $child_vars). ") 
+					( ". implode(", ", $child_vars). ")
 					VALUES ( :" . implode(", :", $child_vars). ");";
 			$query = $this->connexion->prepare($sql);
 			$query->execute($array_to_execute);
 		}
 		return $this->connexion->lastInsertId();
 	}
-	
+
 	public function getOneBy($value, $column = "id", $table){
 		$sql = "SELECT * FROM ".$table." WHERE ".$column."=:".$column." limit 1";
 		$query = $this->connexion->prepare($sql);
@@ -63,7 +63,7 @@ class bdd {
 			}
 		}
 	}
-	
+
 	public function getResults($value, $column = "id", $table, $order){
 		$requete = (empty($column))?"":" WHERE ".$column."=:".$column;
 		$sql = "SELECT * FROM ".$table.$requete." ".$order;
@@ -72,7 +72,7 @@ class bdd {
 		$query->setFetchMode(PDO::FETCH_ASSOC);
 		return $query->fetchAll(PDO::FETCH_ASSOC);
 	}
-	
+
 	public function getResultsClause($array, $table, $order){
 		$requete = (empty($array))?"":" WHERE ";
 		$taille = count($array);
@@ -88,14 +88,14 @@ class bdd {
 		$query->setFetchMode(PDO::FETCH_ASSOC);
 		return $query->fetchAll(PDO::FETCH_ASSOC);
 	}
-	
+
 	public function requete($requete){
 		$query = $this->connexion->prepare($requete);
 		$query->execute();
 		$query->setFetchMode(PDO::FETCH_ASSOC);
 		return $query->fetchAll(PDO::FETCH_ASSOC);
 	}
-	
+
 	public function requeteDelete($requete){
 		$query = $this->connexion->prepare($requete);
 		$query->execute();
