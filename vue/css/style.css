@@ -367,8 +367,10 @@ footer {
 
 .item-menu {
   display: none;
-  background: #fff;
+  background: #fDfDfD;
   overflow: hidden;
+  position: relative;
+  top: -2em;
 }
 
 .item-menu a {
