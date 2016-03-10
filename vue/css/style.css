@@ -336,6 +336,8 @@ header h1 small{
 .bloc-image {
   background-image: url('../img/prize.png');
   background-size: cover;
+  float: left;
+  height: 40px;
 }
 
 footer {
@@ -352,6 +354,16 @@ footer {
 .home-footer {
   height: 137px;
   padding-top: 27px;
+}
+
+.home-bloc-bottom {
+  position: fixed;
+  bottom: 155px;
+  background: white;
+  padding: 15px;
+  width: 90%;
+  left: 5%;
+  box-sizing: border-box;
 }
 
 .full-bottom {
