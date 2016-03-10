@@ -162,13 +162,13 @@ button:hover {
    margin: 0 auto;
 }
 .activity ul li:first-child {
-  width: 220px !important;
-  height: 220px !important;
+  width: 170px !important;
+  height: 170px !important;
 }
 .activity ul li:last-child {
   margin-top: 10px;
-  height: 160px !important;
-  width: 160px !important;
+  height: 110px !important;
+  width: 110px !important;
 }
 
 .popup ul li button {
@@ -405,10 +405,18 @@ footer {
   background-size: 3em auto;
 }
 
-.item-menu a.service {
+.item-menu a.logo {
   text-align: center;
   padding-top: 2.8em;
-  background: url('../img/service-affaire.svg') no-repeat;
+  background: url('../img/visit.svg') no-repeat;
+  background-position: top center;
+  background-size: 3em auto;
+}
+
+.item-menu a.logo-active {
+  text-align: center;
+  padding-top: 2.8em;
+  background: url('../img/visit-active.svg') no-repeat;
   background-position: top center;
   background-size: 3em auto;
 }

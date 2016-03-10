@@ -2,9 +2,12 @@
 <html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=false" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=no" >
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="transparent" />
+
+		<link	rel="apple-touch-icon" href="vue/img/logo-apple.png"/>
 		<link href='vue/css/css.css' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="vue/css/reset.css">
 
@@ -14,7 +17,7 @@
 		<!-- Resource style -->
 		<script src="vue/js/modernizr.js"></script><!-- Modernizr -->
 
-		<title>Visit by Best Western</title>
+		<title>E-conciergerie</title>
 	</head>
 
 	<body>
@@ -103,7 +106,7 @@
 
 				<a href="#" class="breakfast">Petit déjeuner</a>
 				<a href="#" class="map">Carte</a>
-				<a href="#" class="service">Services d'affaires</a>
+				<a href="#" class="logo">Visit</a>
 				<a href="#" class="more">Plus</a>
 			</div>
 		</footer>
