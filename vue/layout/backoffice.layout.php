@@ -100,8 +100,8 @@
                 </div>
 
                 <ul class="main-menu">
-                    <li <?php if ($_SERVER['REQUEST_URI'] == "/backoffice") echo "class=\"active\""; ?>>
-                        <a href="http://www.coteauto.net/backoffice"><i class="zmdi zmdi-home"></i> Accueil</a>
+                    <li <?php if ($_SERVER['REQUEST_URI'] == "/backoffice/index") echo "class=\"active\""; ?>>
+                        <a href="http://www.coteauto.net/backoffice/index"><i class="zmdi zmdi-home"></i> Accueil</a>
                     </li>
                     <li <?php if ($_SERVER['REQUEST_URI'] == "/backoffice/notification") echo "class=\"active\""; ?>><a href="http://www.coteauto.net/backoffice/notification"><i class="zmdi zmdi-format-underlined"></i> Notification</a></li>
                     <li class="sub-menu">
