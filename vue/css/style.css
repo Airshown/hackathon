@@ -32,16 +32,8 @@ body {
   z-index: 1;
 }
 
-.mask {
-  color: #fff;
-  background-size: cover;
-  opacity: 0.8;
-  display: block;
-  height: 800px;
-  left: 0;
-  position: fixed;
-  right: 0;
-  z-index: 3;
+.lockscreen {
+  overflow: hidden;
 }
 
 a, p {
@@ -347,7 +339,7 @@ footer {
 
 .full-bottom {
   /*bottom: 50px;*/
-  height: 166px;
+  height: 172px;
   transition: all .3s;
 }
 
@@ -363,12 +355,13 @@ footer {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  box-shadow: 0 0 4px -1px rgba(0,0,0,0.4);
 }
 
 .item-menu {
   display: none;
   background: #fDfDfD;
-  overflow: hidden;
+  /*overflow: hidden;*/
   position: relative;
   top: -2em;
 }

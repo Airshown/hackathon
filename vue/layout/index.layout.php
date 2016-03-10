@@ -91,8 +91,46 @@
 			?>
 			<div class="cd-timeline-block">
 				<span class="cd-date"><?php echo $heure; ?>:<?php echo $min; ?></span>
-				<a href="#">
-					<div class="cd-timeline-img cd-orange"> <img src="vue/img/coffee.svg" alt="<?php echo $name; ?>"> </div>
+				<a href="#" onclick="javascript:;">
+					<div class="cd-timeline-img cd-
+					<?php
+						switch($name) {
+							case 'Restaurant':
+								echo "red";
+								break;
+							case 'Piscine':
+								echo "blue";
+								break;
+							case 'Petit Dejeuner':
+								echo "orange";
+								break;
+							case 'Réveil':
+								echo "purple";
+								break;
+							default:
+								echo "orange";
+								break;
+						}
+					?>"> <img src="vue/img/
+						<?php
+							switch($name) {
+								case 'Restaurant':
+									echo "coffee";
+									break;
+								case 'Piscine':
+									echo "swim";
+									break;
+								case 'Petit Dejeuner':
+									echo "coffee";
+									break;
+								case 'Réveil':
+									echo "sleep";
+									break;
+								default:
+									break;
+							}
+						?>
+						.svg" alt="<?php echo $name; ?>"> </div>
 					<!-- cd-timeline-img -->
 				</a>
 
@@ -122,7 +160,7 @@
 					<ul>
 						<li><a href="#" class="home">Accueil</a></li>
 						<li><a href="#" class="messages">Messages</a></li>
-						<li><a href="#" class="conciergerie">Conciergerie</a></li>
+						<li><a href="#" class="conciergerie">Repas</a></li>
 						<li><a href="#" class="visit">Votre séjour</a></li>
 
 						<li><a href="#" class="breakfast">Petit déjeuner</a></li>
