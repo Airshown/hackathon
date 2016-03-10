@@ -266,13 +266,16 @@ input{
     border-radius: .25rem;
 }
 header {
-	height: 8%;
+	height: 50px;
   background: #021f65;
   overflow: hidden;
   white-space: nowrap;
   position: fixed;
   width: 100%;
   z-index: 9999;
+}
+.big-header {
+  height: 90px;
 }
 header h1 {
   color: white;
