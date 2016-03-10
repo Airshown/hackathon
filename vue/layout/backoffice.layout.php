@@ -85,16 +85,10 @@
 
                     <ul class="main-menu">
                         <li>
-                            <a href="profile-about.html"><i class="zmdi zmdi-account"></i> View Profile</a>
+                            <a href="http://www.coteauto.net/backoffice/profil"><i class="zmdi zmdi-account"></i> Mes informations</a>
                         </li>
                         <li>
-                            <a href=""><i class="zmdi zmdi-input-antenna"></i> Privacy Settings</a>
-                        </li>
-                        <li>
-                            <a href=""><i class="zmdi zmdi-settings"></i> Settings</a>
-                        </li>
-                        <li>
-                            <a href=""><i class="zmdi zmdi-time-restore"></i> Logout</a>
+                            <a href="http://www.coteauto.net/logout"><i class="zmdi zmdi-time-restore"></i> Deconnexion</a>
                         </li>
                     </ul>
                 </div>
@@ -104,107 +98,13 @@
                         <a href="http://www.coteauto.net/backoffice/index"><i class="zmdi zmdi-home"></i> Accueil</a>
                     </li>
                     <li <?php if ($_SERVER['REQUEST_URI'] == "/backoffice/notification") echo "class=\"active\""; ?>><a href="http://www.coteauto.net/backoffice/notification"><i class="zmdi zmdi-format-underlined"></i> Notification</a></li>
-                    <li class="sub-menu">
-                        <a href=""><i class="zmdi zmdi-view-compact"></i> Headers</a>
-                        <ul>
-                            <li><a href="textual-menu.html">Textual menu</a></li>
-                            <li><a href="image-logo.html">Image logo</a></li>
-                            <li><a href="top-mainmenu.html">Mainmenu on top</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="typography.html"><i class="zmdi zmdi-format-underlined"></i> Typography</a></li>
+                    <li <?php if ($_SERVER['REQUEST_URI'] == "/backoffice/map") echo "class=\"active\""; ?>><a href="http://www.coteauto.net/backoffice/map"><i class="zmdi zmdi-format-underlined"></i> Carte des Utilisateurs</a></li>
                 </ul>
             </aside>
             
-            <aside id="chat" class="sidebar c-overflow">
-            
-                <div class="chat-search">
-                    <div class="fg-line">
-                        <input type="text" class="form-control" placeholder="Search People">
-                    </div>
-                </div>
-
-                <div class="listview">
-                    <a class="lv-item" href="">
-                        <div class="media">
-                            <div class="pull-left">
-                                <img class="lv-img-sm" src="vue/backoffice/img/profile-pics/1.jpg" alt="">
-                            </div>
-                            <div class="media-body">
-                                <div class="lv-title">David Belle</div>
-                                <small class="lv-small">Last seen 3 hours ago</small>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="lv-item" href="">
-                        <div class="media">
-                            <div class="pull-left p-relative">
-                                <img class="lv-img-sm" src="vue/backoffice/img/profile-pics/3.jpg" alt="">
-                                <i class="chat-status-online"></i>
-                            </div>
-                            <div class="media-body">
-                                <div class="lv-title">Fredric Mitchell Jr.</div>
-                                <small class="lv-small">Availble</small>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="lv-item" href="">
-                        <div class="media">
-                            <div class="pull-left p-relative">
-                                <img class="lv-img-sm" src="vue/backoffice/img/profile-pics/4.jpg" alt="">
-                                <i class="chat-status-online"></i>
-                            </div>
-                            <div class="media-body">
-                                <div class="lv-title">Glenn Jecobs</div>
-                                <small class="lv-small">Availble</small>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="lv-item" href="">
-                        <div class="media">
-                            <div class="pull-left">
-                                <img class="lv-img-sm" src="vue/backoffice/img/profile-pics/5.jpg" alt="">
-                            </div>
-                            <div class="media-body">
-                                <div class="lv-title">Bill Phillips</div>
-                                <small class="lv-small">Last seen 3 days ago</small>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="lv-item" href="">
-                        <div class="media">
-                            <div class="pull-left">
-                                <img class="lv-img-sm" src="vue/backoffice/img/profile-pics/6.jpg" alt="">
-                            </div>
-                            <div class="media-body">
-                                <div class="lv-title">Wendy Mitchell</div>
-                                <small class="lv-small">Last seen 2 minutes ago</small>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="lv-item" href="">
-                        <div class="media">
-                            <div class="pull-left p-relative">
-                                <img class="lv-img-sm" src="vue/backoffice/img/profile-pics/7.jpg" alt="">
-                                <i class="chat-status-busy"></i>
-                            </div>
-                            <div class="media-body">
-                                <div class="lv-title">Teena Bell Ann</div>
-                                <small class="lv-small">Busy</small>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </aside>
             <?php
 			include("vue/".$controller."/".$action.".php");
 			?>
-            
-          
         
         <footer id="footer">
             Copyright &copy; 2016 Best Western BackOffice 

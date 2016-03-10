@@ -6,9 +6,19 @@
 		<action>defaultPage</action>
 	</route>
 	<route>
+		<url>^/logout$</url>
+		<controller>logout</controller>
+		<action>defaultPage</action>
+	</route>
+	<route>
 		<url>^/backoffice/notification$</url>
 		<controller>backoffice</controller>
 		<action>notification</action>
+	</route>
+	<route>
+		<url>^/backoffice/profil$</url>
+		<controller>backoffice</controller>
+		<action>profil</action>
 	</route>
 	<route>
 		<url>^/backoffice/index$</url>
@@ -19,6 +29,12 @@
 		<url>^/backoffice/login$</url>
 		<controller>backoffice</controller>
 		<action>login</action>
+	</route>
+	
+	<route>
+		<url>^/backoffice/map$</url>
+		<controller>backoffice</controller>
+		<action>map</action>
 	</route>
 	<route>
 		<url>^/ajax/popup/(.*)/(.*)$</url>

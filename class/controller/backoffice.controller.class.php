@@ -38,6 +38,18 @@ class backoffice
 			header('Location: http://www.coteauto.net/');
 		}
 	}
+	
+	public function map($args){
+		if (security::is_connected() == 1){
+			$view = new vue("admin", "map", "backoffice.layout");
+			
+		}else{
+			header('Location: http://www.coteauto.net/');
+		}
+		
+    }
+	
+	
 	public function login($args){
 		
 		if ($args["envoyer"] == "oui"){
