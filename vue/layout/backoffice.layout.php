@@ -207,10 +207,10 @@
           
         
         <footer id="footer">
-            Copyright &copy; 2016 Administration 
+            Copyright &copy; 2016 Best Western BackOffice 
             
             <ul class="f-menu">
-                <li><a href="http://www.coteauto.net/backoffice">Accueil</a></li>
+                <li><a href="http://www.coteauto.net/backoffice/index">Accueil</a></li>
                 <li><a href="http://www.coteauto.net/backoffice/notification">Notifications</a></li>
             </ul>
         </footer>

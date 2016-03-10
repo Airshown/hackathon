@@ -2,11 +2,10 @@
                 <div class="container">
 					 <div class="card">
 							<div class="card-header">
-								<h2>Basic Example <small>Individual form controls automatically receive some global styling. All textual 'input', 'textarea', and 'select' elements with .form-control are set to width: 100%; by default. Wrap labels and controls in .form-group for optimum spacing.
-	</small></h2>
+								<h2>Envoi manuel de notification</h2>
 							</div>
 							<div class="card-body card-padding">
-								<form role="form" action="http://www.coteauto.net/backoffice/notification">
+								<form role="form" method="post" action="http://www.coteauto.net/backoffice/notification">
 								<input type="hidden" name="envoyer" value="oui">
 									<div class="form-group fg-line">
 										<label for="exampleInputPassword1">Type d'activité</label>
@@ -16,6 +15,18 @@
 											<?php endforeach; ?>
 										</select>
 									</div>
+									<div class="form-group fg-line">
+										<label for="exampleInputPassword1">Utilisateur</label>
+										<select name="utilisateur" class="form-control">
+											<?php foreach($resultatUsers as $key => $value): ?>
+												<option value="<?php echo $value["user"]; ?>"><?php echo $value["nom"]." ".$value["prenom"]; ?></option>
+											<?php endforeach; ?>
+										</select>
+									</div>
+									
+									
+									
+									
 									
 									<button type="submit" class="btn btn-primary btn-sm m-t-10">Envoyer</button>
 								</form>

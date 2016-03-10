@@ -38,7 +38,7 @@ class notification extends bdd{
 	}
 	
 	public function set_user($user){
-		$this->user = $user;;
+		$this->user = $user;
 	}
 	
 	public function set_is_done($is_done){

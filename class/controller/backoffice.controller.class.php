@@ -15,13 +15,21 @@ class backoffice
 	public function notification($args){
 		
 		if ($args["envoyer"] == "oui"){
-			
+			$notification = new notification;
+			$notification->set_user($args["utilisateur"]);
+			$notification->set_activities($args["type"]);
+			$notification->set_is_done(0);
+			$notification->save("notification");
 		}
 		$view = new vue("admin", "notification", "backoffice.layout");
 		
 		$requete = new bdd;
 		$resultat = $requete->getResultsClause(["hotel" => 1], "activities", "");
 		$view->assign("resultat", $resultat);
+		
+		$view->assign("resultatUsers", $requete->requete("SELECT * FROM visit, user where visit.hotel = 1 and visit.user = user.id and visit.date_debut < '".date("Y-m-d H:i:s")."' and visit.date_fin > '".date("Y-m-d H:i:s")."'"));	
+		
+		
 		
 		
 	}
