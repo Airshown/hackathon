@@ -43,8 +43,7 @@
 
 		<header class="big-header">
 			<div id="gauche" style="padding: 10px;">
-        <img src="vue/img/logo-apple.png">
-		 		<a class="title-link" href="#">BEST WESTERN A La Villa des Artistes ***</a>
+		 		<a class="title-link big-header-home" href="#">BEST WESTERN A La Villa des Artistes ***</a>
         <input type="text" placeholder=" Rechercher">
 			</div>
 			<div id="droite">
@@ -55,17 +54,16 @@
 
 		<div class="background-image"></div>
 
-		<section id="cd-timeline" class="cd-container">
+		<!-- <section id="cd-timeline" class="cd-container"> -->
       <div class="home-bloc-bottom">
         <div class="bloc-image">
-          <img src="vue/img/prize.svg" alt="Cadeaux">
         </div>
 
         <div class="bloc-content">
           <p>Gagnez pleins de cadeaux avec le système Visit by Best Western.</p>
         </div>
       </div>
-		</section>
+		<!-- </section> -->
 
 		<div class="push">
 		</div>
@@ -74,10 +72,10 @@
 		<footer class="home-footer">
 			<!-- <a class="footer-button" href="#"></a> -->
 
-			<div class="item-menu">
+			<div style="display: block;" class="item-menu">
 				<nav>
 					<ul>
-						<li><a href="#" class="home">Accueil</a></li>
+						<li class="active"><a href="#" class="home">Accueil</a></li>
 						<li><a href="#" class="messages">Messages</a></li>
 						<li><a href="#" class="conciergerie">Repas</a></li>
 						<li><a href="#" class="visit">Votre séjour</a></li>

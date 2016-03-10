@@ -178,13 +178,13 @@ ul li:first-of-type button {
 
 .circl-smile {
   border-radius: 50%;
-  background: #75ce66;
+  /*background: #75ce66;*/
   padding: 25px;
 }
 
 .circl-sad {
   border-radius: 50%;
-  background: #c03b44;
+  /*background: #c03b44;*/
   padding: 25px;
 }
 
@@ -275,7 +275,11 @@ header {
   z-index: 9999;
 }
 .big-header {
-  height: 90px;
+  height: 122px;
+}
+.big-header-home {
+  background-color: url('../vue/img/logo-apple.png');
+  text-transform: initial;
 }
 header h1 {
   color: white;
@@ -329,6 +333,13 @@ header h1 small{
 	float:right;
 }
 
+.bloc-image {
+  background-image: url('../img/prize.png');
+  background-size: cover;
+  float: left;
+  height: 40px;
+}
+
 footer {
   position: fixed;
   background: white;
@@ -343,6 +354,16 @@ footer {
 .home-footer {
   height: 137px;
   padding-top: 27px;
+}
+
+.home-bloc-bottom {
+  position: fixed;
+  bottom: 155px;
+  background: white;
+  padding: 15px;
+  width: 90%;
+  left: 5%;
+  box-sizing: border-box;
 }
 
 .full-bottom {

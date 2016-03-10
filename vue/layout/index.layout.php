@@ -79,8 +79,8 @@
 					<p>Avez-vous apprécié ?</p>
 
 					<ul>
-						 <li class="circl-smile"><a id="closePopUpSmile" href="#"><img src="vue/img/boy-smile.svg" alt="Satisfait"></a></li>
-						 <li class="circl-sad"><a id="closePopUpSad" href="#"><img src="vue/img/boy-normal.svg" alt="Non satisfait"></a></li>
+						 <li class="circl-smile"><a id="closePopUpSmile" href="#"><img src="vue/img/content-white.svg" alt="Satisfait"></a></li>
+						 <li class="circl-sad"><a id="closePopUpSad" href="#"><img src="vue/img/pas-content-white.svg" alt="Non satisfait"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -123,6 +123,9 @@
 									break;
 								case 'Reveil':
 									echo "sleep";
+									break;
+								case 'Soutenance':
+									echo "book";
 									break;
 								default:
 									break;
