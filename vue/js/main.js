@@ -19,6 +19,17 @@ jQuery(document).ready(function($){
 			overlay.fadeOut();
 			popup.toggleClass('oneOpen').delay(700).promise().done(function () {
 				$(this).hide();
+				var http = new XMLHttpRequest();
+				http.open("POST", "http://www.coteauto.net/ajax/popup/smile", true);
+				http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				http.onreadystatechange = function() {
+					if(http.readyState == 4 && http.status == 200) {
+						if (http.responseText != ""){
+							//var tableau = JSON.parse(http.responseText);
+						}
+					}
+				}
+				http.send("");
 			});
 	  });
 
@@ -26,6 +37,17 @@ jQuery(document).ready(function($){
 			overlay.fadeOut();
 			popup.toggleClass('oneOpen').delay(700).promise().done(function () {
 					$(this).hide();
+					var http = new XMLHttpRequest();
+					http.open("POST", "http://www.coteauto.net/ajax/popup/sad", true);
+					http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+					http.onreadystatechange = function() {
+						if(http.readyState == 4 && http.status == 200) {
+							if (http.responseText != ""){
+								//var tableau = JSON.parse(http.responseText);
+							}
+						}
+					}
+				http.send("");
 			});
 		});
 

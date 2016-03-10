@@ -25,11 +25,13 @@ $objet_method = $routes->get_route($_SERVER["REQUEST_URI"]);
 $type_objet = (string)$objet_method[0];
 $methode_objet = (string)$objet_method[1];
 
+$args = array_merge($objet_method[2], $_POST);
+
+
 if (class_exists($type_objet)){
 	$objet = new $type_objet;
 	if (is_callable([$type_objet, $methode_objet])){
-		$objet->$methode_objet($_POST);
-		echo $objet_method[2][1];
+		$objet->$methode_objet($args);
 	}else{
 		unset($objet);
 		$objet = new notFound;

@@ -4,9 +4,15 @@
 		<url>^/$</url>
 		<controller>front</controller>
 		<action>defaultPage</action>
-	</route><route>
+	</route>
+	<route>
 		<url>^/backoffice$</url>
 		<controller>backoffice</controller>
 		<action>defaultPage</action>
+	</route>
+	<route>
+		<url>^/ajax/popup/(.*)$</url>
+		<controller>ajax</controller>
+		<action>popup</action>
 	</route>
 </routes>
