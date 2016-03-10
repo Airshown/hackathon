@@ -169,7 +169,7 @@
 
 						<li><a href="#" class="breakfast">Petit déjeuner</a></li>
 						<li><a href="#" class="map">Carte</a></li>
-						<li class="active"><a href="#" class="logo-active">Visit</a></li>
+						<li class="active"><a href="#" class="logo-active active">Visit</a></li>
 						<li><a href="#" class="more">Plus</a></li>
 					</ul>
 				</nav>
