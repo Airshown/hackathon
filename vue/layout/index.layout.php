@@ -92,7 +92,26 @@
 			<div class="cd-timeline-block">
 				<span class="cd-date"><?php echo $heure; ?>:<?php echo $min; ?></span>
 				<a href="#" onclick="javascript:;">
-					<div class="cd-timeline-img cd-orange"> <img src="vue/img/
+					<div class="cd-timeline-img cd-
+					<?php
+						switch($name) {
+							case 'Restaurant':
+								echo "red";
+								break;
+							case 'Piscine':
+								echo "blue";
+								break;
+							case 'Petit Dejeuner':
+								echo "orange";
+								break;
+							case 'Réveil':
+								echo "purple";
+								break;
+							default:
+								echo "orange";
+								break;
+						}
+					?>"> <img src="vue/img/
 						<?php
 							switch($name) {
 								case 'Restaurant':
