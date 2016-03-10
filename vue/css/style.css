@@ -571,6 +571,17 @@ footer {
 .cd-timeline-content h2 {
   color: #303e49;
 }
+
+.cd-timeline-content > img {
+  text-align: center;
+  margin: 15px auto;
+  width: 37%;
+  display: block;
+  background-color: #FFB300;
+  padding: 10px;
+  border-radius: 50%;
+}
+
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;

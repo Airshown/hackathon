@@ -43,7 +43,7 @@
 
 		<header>
 			<div id="gauche" style="padding: 10px;">
-		 		<a class="title-link" href="#">< Retour sur l'accueil</a>
+		 		<a class="title-link" href="#">BEST WESTERN A La Villa des Artistes ***</a>
 			</div>
 			<div id="droite">
 				<img style="width: 45px; padding: 10px;" src="vue/img/loupe.svg">
@@ -51,101 +51,9 @@
 	 	</header>
 
 		<div class="background-image"></div>
-		<div class="mask"></div>
-		<!-- Début de la section des évènements de la timeline -->
+
 		<section id="cd-timeline" class="cd-container">
 
-			<!-- Popup d'activation Bluetooth -->
-			<!-- <div class="container">
-				 <div class="overlay"></div>
-				 <div class="popup one">
-						<h3>Aucune activité Bluetooth détectée!</h3>
-						<p>Pour participer à ce programme la technologie Bluetooth de votre téléphone doit être activée.</p>
-						<ul>
-							 <li><button id="closePopUpOne">J'ai compris</button></li>
-						</ul>
-				 </div>
-			</div> -->
-
-			<!-- Popup de sélection de satisfaction -->
-			<div class="container" id="popupJs">
-				<div class="overlay"></div>
-				<div class="popup one activity">
-				 <div class="cd-timeline-img centered cd-green">
-					 <img src="vue/img/coffee.svg" alt="Petit déjeuner">
-				 </div>
-
-					<h3>Activité terminée!</h3>
-					<p>Avez-vous apprécié ?</p>
-
-					<ul>
-						 <li class="circl-smile"><a id="closePopUpSmile" href="#"><img src="vue/img/boy-smile.svg" alt="Satisfait"></a></li>
-						 <li class="circl-sad"><a id="closePopUpSad" href="#"><img src="vue/img/boy-normal.svg" alt="Non satisfait"></a></li>
-					</ul>
-				</div>
-			</div>
-
-			<?php
-				foreach($tableau as $key => $value):
-				sscanf($value["date_heure"], "%4s-%2s-%2s %2s:%2s:%2s", $an, $mois, $jour, $heure, $min, $sec);
-			?>
-			<div class="cd-timeline-block">
-				<span class="cd-date"><?php echo $heure; ?>:<?php echo $min; ?></span>
-				<a href="#" onclick="javascript:;">
-					<div class="cd-timeline-img cd-
-					<?php
-						switch($name) {
-							case 'Restaurant':
-								echo "red";
-								break;
-							case 'Piscine':
-								echo "blue";
-								break;
-							case 'Petit Dejeuner':
-								echo "orange";
-								break;
-							case 'Réveil':
-								echo "purple";
-								break;
-							default:
-								echo "orange";
-								break;
-						}
-					?>"> <img src="vue/img/
-						<?php
-							switch($name) {
-								case 'Restaurant':
-									echo "coffee";
-									break;
-								case 'Piscine':
-									echo "swim";
-									break;
-								case 'Petit Dejeuner':
-									echo "coffee";
-									break;
-								case 'Réveil':
-									echo "sleep";
-									break;
-								default:
-									break;
-							}
-						?>
-						.svg" alt="<?php echo $name; ?>"> </div>
-					<!-- cd-timeline-img -->
-				</a>
-
-				<div class="cd-timeline-content">
-					<h2 class="center"><?php echo $value["name"]; ?></h2>
-					<!-- <div class="cd-timeline-img centered cd-red">
-						<img src="img/boy-normal.svg" alt="Non satisfait">
-					</div> -->
-				</div>
-				<!-- cd-timeline-content -->
-			</div>
-			<!-- cd-timeline-block -->
-			<?php
-				endforeach;
-			?>
 		</section>
 
 		<div class="push">
@@ -165,7 +73,7 @@
 
 						<li><a href="#" class="breakfast">Petit déjeuner</a></li>
 						<li><a href="#" class="map">Carte</a></li>
-						<li><a href="#" class="logo-active">Visit</a></li>
+						<li><a href="#" class="logo">Visit</a></li>
 						<li><a href="#" class="more">Plus</a></li>
 					</ul>
 				</nav>

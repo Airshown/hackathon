@@ -20,4 +20,9 @@
 		<controller>ajax</controller>
 		<action>notif</action>
 	</route>
+	<route>
+		<url>^/home$</url>
+		<controller>home</controller>
+		<action>defaultPage</action>
+	</route>
 </routes>
