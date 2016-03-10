@@ -11,7 +11,7 @@
 		<action>defaultPage</action>
 	</route>
 	<route>
-		<url>^/ajax/popup/(.*)$</url>
+		<url>^/ajax/popup/(.*)/(.*)$</url>
 		<controller>ajax</controller>
 		<action>popup</action>
 	</route>
