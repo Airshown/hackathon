@@ -14,5 +14,11 @@ class backoffice
 	
 	public function notification($args){
 		$view = new vue("admin", "notification", "backoffice.layout");
+		
+		$requete = new bdd;
+		$resultat = $requete->getResultClause(["hotel" => 1], "activities", "");
+		$view->assign("resultat", $resultat);
+		
+		
 	}
 }
