@@ -275,7 +275,11 @@ header {
   z-index: 9999;
 }
 .big-header {
-  height: 90px;
+  height: 122px;
+}
+.big-header-home {
+  background-color: url('../vue/img/logo-apple.png');
+  text-transform: initial;
 }
 header h1 {
   color: white;
@@ -327,6 +331,11 @@ header h1 small{
 #droite img{
 	width: 50px;
 	float:right;
+}
+
+.bloc-image {
+  background-image: url('../img/prize.png');
+  background-size: cover;
 }
 
 footer {
