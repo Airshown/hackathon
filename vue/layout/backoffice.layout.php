@@ -220,21 +220,6 @@
                 </div>
 
                 <div class="listview">
-				<?php foreach($tableau as $key => $value): ?>
-                    <a class="lv-item" href="">
-                        <div class="media">
-                            <div class="pull-left p-relative">
-                                <img class="lv-img-sm" src="vue/backoffice/img/profile-pics/2.jpg" alt="">
-                                <i class="chat-status-busy"></i>
-                            </div>
-                            <div class="media-body">
-                                <div class="lv-title"><?php echo $value["prenom"]." ".$value["nom"]; ?></div>
-                                <small class="lv-small">Available</small>
-                            </div>
-                        </div>
-                    </a>
-				<?php endforeach; ?>
-
                     <a class="lv-item" href="">
                         <div class="media">
                             <div class="pull-left">
