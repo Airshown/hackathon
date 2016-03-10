@@ -340,6 +340,11 @@ footer {
   transition: all .3s;
 }
 
+.home-footer {
+  height: 137px;
+  padding-top: 27px;
+}
+
 .full-bottom {
   /*bottom: 50px;*/
   height: 172px;
