@@ -36,7 +36,7 @@
 		<!-- Resource style -->
 		<script src="vue/js/modernizr.js"></script><!-- Modernizr -->
 
-		<title>eConciergerie</title>
+		<title>eConcierge</title>
 	</head>
 
 	<body>

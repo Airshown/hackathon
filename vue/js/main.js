@@ -109,7 +109,7 @@ jQuery(document).ready(function($){
 		 }
 
     });
-	
+
 	var newInterval = setInterval(function(){
 			var http = new XMLHttpRequest();
 					http.open("POST", "http://www.coteauto.net/ajax/notif/", true);
@@ -123,6 +123,36 @@ jQuery(document).ready(function($){
 										notification = tableau[0].id;
 										document.getElementById("popupJs").style.visibility = "visible";
 										document.getElementById("typeActivite").innerHTML = tableau[0].name;
+										var nom = "";
+										var src = "";
+										switch (tableau[0].name) {
+											case "Restaurant":
+												nom = "red";
+												src = "eat";
+												break;
+											case "Piscine":
+												nom = "blue";
+												src = "swim";
+												break;
+											case "Petit Dejeuner":
+												nom = "orange";
+												src = "coffee";
+												break;
+											case "Reveil":
+													nom = "purple";
+													src = "sleep";
+													break;
+											case "Petit Dejeuner":
+													nom = "orange";
+													break;
+											case "Soutenance":
+													nom = "bluecyan";
+													src = "book";
+											default:
+										}
+
+										document.getElementById("current-activity").addAttribute("src", "vue/img/"+src+".svg");
+										document.getElementById("modifyClass").className = "cd-timeline-img centered cd-"+nom;
 										document.body.style.overflow = "hidden";
 									}
 								}
@@ -131,7 +161,7 @@ jQuery(document).ready(function($){
 					}
 				http.send("");
 		}, 3000);
-		
-		
+
+
 
 });

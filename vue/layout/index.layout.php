@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=no" >
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="transparent" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="yes" />
 		<link rel="icon" type="image/png" href="vue/img/logo-apple.png" />
 
 		<link rel="apple-touch-icon" sizes="57x57" href="vue/img/icons/apple-icon-57x57.png">
@@ -36,7 +36,7 @@
 		<!-- Resource style -->
 		<script src="vue/js/modernizr.js"></script><!-- Modernizr -->
 
-		<title>eConciergerie</title>
+		<title>eConcierge</title>
 	</head>
 
 	<body>
@@ -71,8 +71,8 @@
 			<div class="container" id="popupJs">
 				<div class="overlay"></div>
 				<div class="popup one activity">
-				 <div class="cd-timeline-img centered cd-green">
-					 <img src="vue/img/coffee.svg" alt="Petit déjeuner">
+				 <div id="modifyClass" class="cd-timeline-img centered">
+					 <img id="current-activity"  alt="Activité en cours">
 				 </div>
 
 					<h3>Activité terminée!</h3>
@@ -108,6 +108,8 @@
 							case 'Reveil':
 								echo "purple";
 								break;
+							case 'Soutenance':
+								echo "bluecyan";
 							default:
 								echo "orange";
 								break;

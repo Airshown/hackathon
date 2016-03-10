@@ -284,7 +284,7 @@ header {
   background-position: 0 center;
   background-size: 1.9em;
   text-transform: initial;
-  padding: 16px 0 0 51px;
+  padding: 22px 0 15px 46px;
 }
 header h1 {
   color: white;
@@ -320,7 +320,7 @@ header h1 small{
 #droite{
 	z-index: 8;
 	position:relative;
-	width: 30%;
+	width: 22%;
 	height: 110px;
 	float: right;
 	background: rgba(255,255,255,0);
@@ -434,7 +434,7 @@ footer {
     height: 3px;
     width: 50px;
     background: #BA0D51;
-    bottom: -2em;
+    bottom: -1.5em;
 }
 
 .item-menu a.home {
