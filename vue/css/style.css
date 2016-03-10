@@ -337,7 +337,15 @@ header h1 small{
   background-image: url('../img/visit.svg');
   background-size: cover;
   float: left;
-  height: 40px;
+  background-repeat: no-repeat;
+  height: 61px;
+  width: 60px;
+}
+
+.bloc-content {
+  padding: 0 1em;
+  float: left;
+  width: 75%;
 }
 
 footer {
