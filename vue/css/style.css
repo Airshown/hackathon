@@ -381,11 +381,21 @@ footer {
   width: 4em;
   height: 3em;
   float: left;
+  position: relative;
 }
 
 .item-menu a.active {
   color: #BA0D51;
-  border-bottom: 3px solid #BA0D51;
+}
+
+.item-menu a.active:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background: #BA0D51;
+    bottom: -15em;
 }
 
 .item-menu a.home {

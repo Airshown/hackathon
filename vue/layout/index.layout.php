@@ -51,7 +51,7 @@
 	 	</header>
 
 		<div class="background-image"></div>
-		<div class="mask"></div>
+
 		<!-- Début de la section des évènements de la timeline -->
 		<section id="cd-timeline" class="cd-container">
 
