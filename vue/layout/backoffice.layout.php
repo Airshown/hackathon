@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Material Admin</title>
+        <title>Visit by Best Western Admin</title>
 
         <!-- Vendor CSS -->
         <link href="vue/backoffice/vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
@@ -220,6 +220,7 @@
                 </div>
 
                 <div class="listview">
+				<?php foreach($tableau as $key => $value): ?>
                     <a class="lv-item" href="">
                         <div class="media">
                             <div class="pull-left p-relative">
@@ -227,11 +228,12 @@
                                 <i class="chat-status-busy"></i>
                             </div>
                             <div class="media-body">
-                                <div class="lv-title">Jonathan Morris</div>
+                                <div class="lv-title"><?php echo $value["prenom"]." ".$value["nom"]; ?></div>
                                 <small class="lv-small">Available</small>
                             </div>
                         </div>
                     </a>
+				<?php endforeach; ?>
 
                     <a class="lv-item" href="">
                         <div class="media">
@@ -328,12 +330,15 @@
                                     <th data-column-id="commands" data-formatter="commands" data-sortable="false">Actions</th>
                                 </tr>
                             </thead>
+					
                             <tbody>
-                                                        <tr>
+							<?php foreach($tableau as $key => $value): ?>
+                                <tr>
                                     <td>10238</td>
-                                    <td>eduardo@pingpong.com</td>
-                                    <td>14.10.2013</td>
+                                    <td><?php echo $value["email"] ?></td>
+                                    <td><?php echo $value["date_fin"]; ?></td>
                                 </tr>
+								<?php endforeach; ?>
                                 <tr>
                                     <td>10243</td>
                                     <td>eduardo@pingpong.com</td>
