@@ -374,6 +374,7 @@ footer {
   bottom: 155px;
   background: white;
   padding: 15px;
+  box-shadow: 0 1px 4px -2px rgba(0, 0, 0, 0.6);
   width: 90%;
   left: 5%;
   box-sizing: border-box;
@@ -635,13 +636,13 @@ footer {
   border-radius: 50%;
 }
 
-.cd-timeline-sad {
+/*.cd-timeline-sad {
   background-color: #FFB300;
 }
 
 .cd-timeline-happy {
   background-color: #7CB342;
-}
+}*/
 
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
