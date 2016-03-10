@@ -116,15 +116,19 @@
 			<a class="footer-button" href="#"></a>
 
 			<div class="item-menu">
-				<a href="#" class="home">Accueil</a>
-				<a href="#" class="messages">Messages</a>
-				<a href="#" class="conciergerie">Conciergerie</a>
-				<a href="#" class="visit">Votre séjour</a>
+				<nav>
+					<ul>
+						<li><a href="#" class="home">Accueil</a></li>
+						<li><a href="#" class="messages">Messages</a></li>
+						<li><a href="#" class="conciergerie">Conciergerie</a></li>
+						<li><a href="#" class="visit">Votre séjour</a></li>
 
-				<a href="#" class="breakfast">Petit déjeuner</a>
-				<a href="#" class="map">Carte</a>
-				<a href="#" class="logo">Visit</a>
-				<a href="#" class="more">Plus</a>
+						<li><a href="#" class="breakfast">Petit déjeuner</a></li>
+						<li><a href="#" class="map">Carte</a></li>
+						<li><a href="#" class="logo">Visit</a></li>
+						<li><a href="#" class="more">Plus</a></li>
+					</ul>
+				</nav>
 			</div>
 		</footer>
 
