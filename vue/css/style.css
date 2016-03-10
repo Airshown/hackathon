@@ -340,6 +340,11 @@ footer {
   transition: all .3s;
 }
 
+.home-footer {
+  height: 137px;
+  padding-top: 27px;
+}
+
 .full-bottom {
   /*bottom: 50px;*/
   height: 172px;
@@ -395,7 +400,7 @@ footer {
     height: 3px;
     width: 50px;
     background: #BA0D51;
-    bottom: -15em;
+    bottom: -2em;
 }
 
 .item-menu a.home {
@@ -630,6 +635,7 @@ footer {
   opacity: .7;
   position: absolute;
   left: -3.5em;
+  color: #131212;
 }
 
 .cd-timeline-content::before {
