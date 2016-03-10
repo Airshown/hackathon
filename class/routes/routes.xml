@@ -11,6 +11,11 @@
 		<action>defaultPage</action>
 	</route>
 	<route>
+		<url>^/backoffice/notification$</url>
+		<controller>backoffice</controller>
+		<action>notification</action>
+	</route>
+	<route>
 		<url>^/ajax/popup/(.*)/(.*)$</url>
 		<controller>ajax</controller>
 		<action>popup</action>
