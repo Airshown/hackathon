@@ -1,5 +1,8 @@
 jQuery(document).ready(function($){
 
+	// Masque la barre internet sur mobile
+	window.addEventListener("load", function() { window. scrollTo(0, 0); });
+
 	var openPopupOne  	= $('#openPopupOne'),
 			overlay     		= $('.overlay'),
 			popup       		= $('.popup'),
