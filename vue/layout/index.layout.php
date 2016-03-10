@@ -109,7 +109,7 @@
 								echo "purple";
 								break;
 							case 'Soutenance':
-								echo "orange";
+								echo "bluecyan";
 							default:
 								echo "orange";
 								break;

@@ -146,7 +146,7 @@ jQuery(document).ready(function($){
 													nom = "orange";
 													break;
 											case "Soutenance":
-													nom = "orange";
+													nom = "bluecyan";
 													src = "book";
 											default:
 										}
