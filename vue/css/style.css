@@ -353,7 +353,7 @@ footer {
 
 .footer-button {
   background: white url('../img/burger.svg') no-repeat;
-  background-size: 2.5em auto;
+  background-size: 1.5em auto;
   background-position: center center;
   margin: 0 auto;
   display: block;
@@ -375,10 +375,11 @@ footer {
   text-align: center;
   padding-top: 2.8em;
   margin: 1em 0.5em;
-  font-size: 14.5px;
+  font-size: 12.5px;
   background-position: center top;
-  background-size: 1em auto;
+  background-size: 1.5em auto;
   background-repeat:  no-repeat;
+  color: #061F5F;
   width: 4em;
   height: 3em;
   float: left;
