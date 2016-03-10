@@ -1,10 +1,10 @@
 <?php
 class bdd {
 	
-	private $bddhost = "51.255.69.91";
-	private $bddlogin = "usercote";
-	private $bddpass = "Hi4m3d1";
-	private $bddname = "bddcoteauto";
+	private $bddhost = "coteautocl2.mysql.db";
+	private $bddlogin = "coteautocl2";
+	private $bddpass = "Oiu98IUu";
+	private $bddname = "coteautocl2";
 	private $classe;
 	public $result = [];
 	protected $connexion;
