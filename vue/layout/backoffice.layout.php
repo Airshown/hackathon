@@ -30,7 +30,7 @@
                 </li>
 
                 <li class="logo hidden-xs">
-                    <a href="vue/backoffice/index.html">Material Admin</a>
+                    <a href="">Visit by Best Western Admin</a>
                 </li>
 
                 <li class="pull-right">
