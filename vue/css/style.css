@@ -178,13 +178,13 @@ ul li:first-of-type button {
 
 .circl-smile {
   border-radius: 50%;
-  /*background: #75ce66;*/
+  background: #75ce66;
   padding: 25px;
 }
 
 .circl-sad {
   border-radius: 50%;
-  /*background: #c03b44;*/
+  background: #c03b44;
   padding: 25px;
 }
 
@@ -275,10 +275,10 @@ header {
   z-index: 9999;
 }
 .big-header {
-  height: 122px;
+  height: 87px;
 }
 .big-header-home {
-  background-color: url('../vue/img/logo-apple.png');
+  background-color: url('../img/logo-apple.png');
   text-transform: initial;
 }
 header h1 {
@@ -334,10 +334,18 @@ header h1 small{
 }
 
 .bloc-image {
-  background-image: url('../img/prize.png');
+  background-image: url('../img/visit.svg');
   background-size: cover;
   float: left;
-  height: 40px;
+  background-repeat: no-repeat;
+  height: 61px;
+  width: 60px;
+}
+
+.bloc-content {
+  padding: 0 1em;
+  float: left;
+  width: 75%;
 }
 
 footer {
@@ -364,6 +372,7 @@ footer {
   width: 90%;
   left: 5%;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .full-bottom {
@@ -426,7 +435,10 @@ footer {
 
 .item-menu a.home {
   background-image: url('../img/accueil.svg');
+}
 
+.item-menu a.home-active {
+  background-image: url('../img/accueil-active.svg');
 }
 
 .item-menu a.messages {

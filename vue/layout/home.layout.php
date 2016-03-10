@@ -56,8 +56,7 @@
 
 		<!-- <section id="cd-timeline" class="cd-container"> -->
       <div class="home-bloc-bottom">
-        <div class="bloc-image">
-        </div>
+        <div class="bloc-image"></div>
 
         <div class="bloc-content">
           <p>Gagnez pleins de cadeaux avec le système Visit by Best Western.</p>
@@ -75,7 +74,7 @@
 			<div style="display: block;" class="item-menu">
 				<nav>
 					<ul>
-						<li class="active"><a href="#" class="home">Accueil</a></li>
+						<li class="active"><a href="#" class="home active">Accueil</a></li>
 						<li><a href="#" class="messages">Messages</a></li>
 						<li><a href="#" class="conciergerie">Repas</a></li>
 						<li><a href="#" class="visit">Votre séjour</a></li>
