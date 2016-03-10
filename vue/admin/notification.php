@@ -6,14 +6,15 @@
 	</small></h2>
 							</div>
 							<div class="card-body card-padding">
-								<form role="form">
+								<form role="form" action="http://www.coteauto.net/backoffice/notification">
+								<input type="hidden" name="envoyer" value="oui">
 									<div class="form-group fg-line">
-										<label for="exampleInputEmail1">Email address</label>
-										<input type="email" class="form-control input-sm" id="exampleInputEmail1" placeholder="Enter email">
-									</div>
-									<div class="form-group fg-line">
-										<label for="exampleInputPassword1">Password</label>
-										<input type="password" class="form-control input-sm" id="exampleInputPassword1" placeholder="Password">
+										<label for="exampleInputPassword1">Type d'activité</label>
+										<select name="type" class="form-control">
+											<?php foreach($resultat as $key => $value): ?>
+												<option value="<?php echo $value["id"]; ?>"><?php echo $value["name"]; ?></option>
+											<?php endforeach; ?>
+										</select>
 									</div>
 									<div class="checkbox">
 										<label>
@@ -23,7 +24,7 @@
 										</label>
 									</div>
 									
-									<button type="submit" class="btn btn-primary btn-sm m-t-10">Submit</button>
+									<button type="submit" class="btn btn-primary btn-sm m-t-10">Envoyer</button>
 								</form>
 							</div>
 						</div>

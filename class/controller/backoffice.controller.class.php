@@ -13,10 +13,14 @@ class backoffice
     }
 	
 	public function notification($args){
+		
+		if ($args["envoyer"] == "oui"){
+			
+		}
 		$view = new vue("admin", "notification", "backoffice.layout");
 		
 		$requete = new bdd;
-		$resultat = $requete->getResultClause(["hotel" => 1], "activities", "");
+		$resultat = $requete->getResultsClause(["hotel" => 1], "activities", "");
 		$view->assign("resultat", $resultat);
 		
 		
