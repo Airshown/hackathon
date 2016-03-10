@@ -151,7 +151,7 @@ jQuery(document).ready(function($){
 											default:
 										}
 
-										document.getElementById("current-activity").addAttribute("src", "vue/img/"+src+".svg");
+										document.getElementById("current-activity").setAttribute("src", "vue/img/"+src+".svg");
 										document.getElementById("modifyClass").className = "cd-timeline-img centered cd-"+nom;
 										document.body.style.overflow = "hidden";
 									}
