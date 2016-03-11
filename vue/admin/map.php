@@ -50,30 +50,30 @@
     <script src="vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="vue/backoffice/vendors/bower_components/Waves/dist/waves.min.js"></script>
         <script src="vue/backoffice/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
-        <script src="vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.js"></script>
 		
 		
   <script>
     $(function(){
 		
  	$('#cerclePiscine').click(function(){
-		swal("Piscine");
+		swal({ html:true, title:'Activite Piscine', text:'Nombre d\'utilisateurs : <?php echo $tauxPiscine[0]["tauxpositif"]; ?>\nPourcentage d\'utilisateurs satisfaits : <?php echo round($tauxPiscineSatisfait[0]["tauxpositif"]*100); ?>'});
 	});
 	
 	$('#cercleRestaurant').click(function(){
-		swal("Restaurant");
+		swal({ html:true, title:'Activite Restaurant', text:'Nombre d\'utilisateurs : <?php echo $tauxRestaurant[0]["tauxpositif"]; ?>\nPourcentage d\'utilisateurs satisfaits : <?php echo round($tauxRestaurantSatisfait[0]["tauxpositif"]*100); ?>'});
 	});
 	
 	$('#cerclePetitDejeuner').click(function(){
-		swal("PetitDejeuner");
+		swal({ html:true, title:'Activite Petit Dejeuner', text:'Nombre d\'utilisateurs : <?php echo $tauxPetitDejeuner[0]["tauxpositif"]; ?>\nPourcentage d\'utilisateurs satisfaits : <?php echo round($tauxPetitDejeunerSatisfait[0]["tauxpositif"]*100); ?>'});
 	});
 	
 	$('#cercleReveil').click(function(){
-		swal("Reveil");
+		swal({ html:true, title:'Activite Reveil', text:'Nombre d\'utilisateurs : <?php echo $tauxReveil[0]["tauxpositif"]; ?>\nPourcentage d\'utilisateurs satisfaits : <?php echo round($tauxReveilSatisfait[0]["tauxpositif"]*100); ?>'});
 	});
 	
 	$('#cercleSoutenance').click(function(){
-		swal("Soutenance");
+		swal({ html:true, title:'Activite Soutenance', text:'Nombre d\'utilisateurs : <?php echo $tauxSoutenance[0]["tauxpositif"]; ?>\nPourcentage d\'utilisateurs satisfaits : <?php echo round($tauxSoutenanceSatisfait[0]["tauxpositif"]*100); ?>'});
 	});
 
       var map = new jvm.Map({
@@ -121,10 +121,10 @@
 	}
 	
 	#cerclePiscine span {
-		margin-left: 17px;
+		<?php if ($tauxPiscine[0]["tauxpositif"] < 9): ?>margin-left: 17px;<?php else: ?>margin-left: 15px;<?php endif; ?>
 		margin-top: 10px;
 		position: absolute;
-		color: #9C9DFF;
+		color: #FAFAFA;
 		font-weight: 700;
 	}
 	
@@ -140,10 +140,10 @@
 	}
 	
 	#cercleRestaurant span {
-		margin-left: 17px;
+		<?php if ($tauxRestaurant[0]["tauxpositif"] < 9): ?>margin-left: 17px;<?php else: ?>margin-left: 15px;<?php endif; ?>
 		margin-top: 10px;
 		position: absolute;
-		color: #9C9DFF;
+		color: #FAFAFA;
 		font-weight: 700;
 	}
 	
@@ -159,10 +159,10 @@
 	}
 	
 	#cerclePetitDejeuner span {
-		margin-left: 17px;
+		<?php if ($tauxPetitDejeuner[0]["tauxpositif"] < 9): ?>margin-left: 17px;<?php else: ?>margin-left: 15px;<?php endif; ?>
 		margin-top: 10px;
 		position: absolute;
-		color: #9C9DFF;
+		color: #FAFAFA;
 		font-weight: 700;
 	}
 	
@@ -178,10 +178,10 @@
 	}
 	
 	#cercleReveil span {
-		margin-left: 17px;
+		<?php if ($tauxReveil[0]["tauxpositif"] < 9): ?>margin-left: 17px;<?php else: ?>margin-left: 15px;<?php endif; ?>
 		margin-top: 10px;
 		position: absolute;
-		color: #9C9DFF;
+		color: #FAFAFA;
 		font-weight: 700;
 	}
 	
@@ -196,40 +196,46 @@
 	}
 	
 	#cercleSoutenance span {
-		margin-left: 17px;
+		<?php if ($tauxSoutenance[0]["tauxpositif"] < 9): ?>margin-left: 17px;<?php else: ?>margin-left: 15px;<?php endif; ?>
 		margin-top: 10px;
 		position: absolute;
-		color: #9C9DFF;
+		color: #FAFAFA;
 		font-weight: 700;
+	}
+	a {
+		text-decoration: none;
+		color: #FAFAFA;
 	}
 	
   </style>
   <section id="content">
                 <div class="container">
  <div class="map" style="width: 800px; height: 500px"></div>
- 
+		<?php if ($tauxPiscine[0]["tauxpositif"] != "" && $tauxPiscine[0]["tauxpositif"] != 0): ?>
  		<div id="cerclePiscine">
-			<span><a href="#" id="sa-cerclePiscine">3</a></span>
+			<span><a href="#" id="sa-cerclePiscine"><?php echo round($tauxPiscine[0]["tauxpositif"]); ?></a></span>
 		</div>
-		
+		<?php endif; ?>
+		<?php if ($tauxRestaurant[0]["tauxpositif"] != "" && $tauxRestaurant[0]["tauxpositif"] != 0): ?>
 		<div id="cercleRestaurant">
-			<span><a href="#" id="sa-cerclePiscine">3</a></span>
+			<span><a href="#" id="sa-cerclePiscine"><?php echo round($tauxRestaurant[0]["tauxpositif"]); ?></a></span>
 		</div>
-		
+		<?php endif; ?>
+		<?php if ($tauxPetitDejeuner[0]["tauxpositif"] != "" && $tauxPetitDejeuner[0]["tauxpositif"] != 0): ?>
 		<div id="cerclePetitDejeuner">
-			<span><a href="#" id="sa-cerclePiscine">3</a></span>
+			<span><a href="#" id="sa-cerclePiscine"><?php echo round($tauxPetitDejeuner[0]["tauxpositif"]); ?></a></span>
 		</div>
-		
+		<?php endif; ?>
+		<?php if ($tauxReveil[0]["tauxpositif"] != "" && $tauxReveil[0]["tauxpositif"] != 0): ?>
 		<div id="cercleReveil">
-			<span><a href="#" id="sa-cerclePiscine">3</a></span>
+			<span><a href="#" id="sa-cerclePiscine"><?php echo round($tauxReveil[0]["tauxpositif"]); ?></a></span>
 		</div>
-		
+		<?php endif; ?>
+		<?php if ($tauxSoutenance[0]["tauxpositif"] != "" && $tauxSoutenance[0]["tauxpositif"] != 0): ?>
 		<div id="cercleSoutenance">
-			<span><a href="#" id="sa-cerclePiscine">3</a></span>
+			<span><a href="#" id="sa-cerclePiscine"><?php echo round($tauxSoutenance[0]["tauxpositif"]); ?></a></span>
 		</div>
-		
-		
-		
+		<?php endif; ?>
 </section>
 
  
