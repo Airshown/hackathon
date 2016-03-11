@@ -1,4 +1,19 @@
-  <section id="content">
+<script src="vue/backoffice/assets/mymap.js"></script>
+		<script src="vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vue/backoffice/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.js"></script>
+<script>
+    $(function(){
+		$('#cerclePiscine').click(function(){
+			swal({ html:true, title:'Activite Piscine', text:'zefzef'});
+		});
+    });
+  </script>
+  
+  
+		  
+		  <section id="content">
                 <div class="container">
 					<div class="row">
 					<div class="col-lg-8">

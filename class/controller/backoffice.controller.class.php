@@ -73,7 +73,6 @@ class backoffice
 			$view->assign("tauxSoutenance", $users->requete("SELECT count(*) as tauxpositif FROM feeling where feeling.activities = '5'"));
 			$view->assign("tauxSoutenanceSatisfait", $users->requete("SELECT AVG(REPLACE(type,'smile', '1')) as tauxpositif FROM feeling where feeling.activities = '5'"));
 			
-			
 		}else{
 			header('Location: http://www.coteauto.net/');
 		}

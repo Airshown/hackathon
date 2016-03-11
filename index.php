@@ -1,6 +1,6 @@
 <?php
 session_start();
-ini_set('display_errors', 1); 
+//ini_set('display_errors', 1); 
 date_default_timezone_set("Europe/Paris");
 include_once("class/core/constantes.core.php");
 include_once("class/core/routes.core.class.php");
