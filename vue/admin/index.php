@@ -19,7 +19,6 @@
                         <div class="card-header">
                             <h2>Vos clients</h2>
                         </div>
-                        
                         <table id="data-table-command" class="table table-striped table-vmiddle">
                             <thead>
                                 <tr>
@@ -36,16 +35,22 @@
 								$date_debut = $jour."/".$mois."/".$an;
 								sscanf($value["date_fin"], "%4s-%2s-%2s %2s:%2s:%2s", $an, $mois, $jour, $heure, $min, $sec);
 								$date_fin = $jour."/".$mois."/".$an;
-								
-
+					$sql = new bdd;			
+					$resultat = $sql->requete("SELECT AVG(REPLACE(type,'smile', '1')) as tauxpositif FROM feeling where feeling.user = '".$value["id"]."'");
+					$resultat2 = $sql->requete("SELECT COUNT(*) as tauxpositif FROM feeling where feeling.user = '".$value["id"]."'");
 
 ?>
-                                <tr>
+                               <tr>
                                     <td><?php echo $value["id"]; ?></td>
                                     <td><?php echo $value["nom"] ?> <?php echo $value["prenom"]; ?></td>
                                     <td><?php echo $date_debut ?> au <?php echo $date_fin; ?></td>
+									<td><button type="button" class="btn btn-icon command-edit waves-effect waves-circle" id="boutton_<?php echo $value["id"]; ?>" onclick="swal({ html:true, title:'<?php echo $value["nom"]." ".$value["prenom"]; ?>', text:'Taux de satisfaction : <?php echo count($resultat[0]["tauxpositif"]*100); ?>\nNombre d\'avis : <?php echo $resultat2[0]["tauxpositif"]; ?>'});"><span class="zmdi zmdi-edit"></span></button></td>
                                 </tr>
-								<?php endforeach; ?>
+								<?php 
+								unset($sql);
+								unset($resultat);
+								unset($resultat2);
+								endforeach; ?>
                             </tbody>
                         </table>
                     </div>

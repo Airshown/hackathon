@@ -233,6 +233,12 @@
         <script src="vue/backoffice/js/demo.js" class="<?php echo $_SESSION['nomUtilisateur']; ?>" id="ouehr"></script>
 <script type="text/javascript">
             $(document).ready(function(){
+				<?php foreach($tableau as $key => $value): ?>
+					$('#boutton_<?php echo $value["id"]; ?>').click(function(){
+						swal({ html:true, title:'Activite Piscine', text:'zefzef'});
+					});
+				<?php endforeach; ?>
+				
                 //Basic Example
                 $("#data-table-basic").bootgrid({
                     css: {
@@ -267,21 +273,9 @@
                         iconDown: 'zmdi-expand-more',
                         iconRefresh: 'zmdi-refresh',
                         iconUp: 'zmdi-expand-less'
-                    },
-                    formatters: {
-                        "commands": function(column, row) {
-                            return "<button type=\"button\" class=\"btn btn-icon command-edit waves-effect waves-circle\" data-row-id=\"" + row.id + "\" id=\"boutton_" + row.id + "\"><span class=\"zmdi zmdi-edit\"></span></button> ";
-                        }
+                    }
                     }
                 });
-				
-				<?php foreach($tableau as $key => $value): ?>
-				$('#boutton_<?php echo $value["id"]; ?>').click(function(){
-					swal({ html:true, title:'Activite Piscine', text:'zefzef'});
-				});
-				<?php endforeach; ?>
-		
-		
             });
 			
         </script>

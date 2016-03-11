@@ -13,16 +13,6 @@ class backoffice
 	
 			$view->assign("tauxpositif", $users->requete("SELECT AVG(REPLACE(type,'smile', '1')) as tauxpositif FROM feeling"));
 			
-			$view->assign("tauxPiscine", $users->requete("SELECT AVG(REPLACE(type,'smile', '1')) as tauxpositif FROM feeling where feeling.activities = '1'"));
-			
-			$view->assign("tauxRestaurant", $users->requete("SELECT AVG(REPLACE(type,'smile', '1')) as tauxpositif FROM feeling where feeling.activities = '2'"));
-			
-			$view->assign("tauxPetitDejeuner", $users->requete("SELECT AVG(REPLACE(type,'smile', '1')) as tauxpositif FROM feeling where feeling.activities = '3'"));
-			
-			$view->assign("tauxReveil", $users->requete("SELECT AVG(REPLACE(type,'smile', '1')) as tauxpositif FROM feeling where feeling.activities = '4'"));
-			
-			$view->assign("tauxSoutenance", $users->requete("SELECT AVG(REPLACE(type,'smile', '1')) as tauxpositif FROM feeling where feeling.activities = '5'"));
-			
 		}else{
 			header('Location: http://www.coteauto.net/');
 		}
