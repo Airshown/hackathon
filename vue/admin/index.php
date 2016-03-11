@@ -1,15 +1,13 @@
-<script src="vue/backoffice/assets/mymap.js"></script>
+   <link href="vue/backoffice/vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" rel="stylesheet">
+        <link href="vue/backoffice/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">   
+  <script src="vue/backoffice/assets/jquery-1.8.2.js"></script>
 		<script src="vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="vue/backoffice/vendors/bower_components/Waves/dist/waves.min.js"></script>
         <script src="vue/backoffice/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
         <script src="vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.js"></script>
-<script>
-    $(function(){
-		$('#cerclePiscine').click(function(){
-			swal({ html:true, title:'Activite Piscine', text:'zefzef'});
-		});
-    });
-  </script>
+
   
   
 		  

@@ -270,11 +270,20 @@
                     },
                     formatters: {
                         "commands": function(column, row) {
-                            return "<button type=\"button\" class=\"btn btn-icon command-edit waves-effect waves-circle\" data-row-id=\"" + row.id + "\"><span class=\"zmdi zmdi-edit\"></span></button> ";
+                            return "<button type=\"button\" class=\"btn btn-icon command-edit waves-effect waves-circle\" data-row-id=\"" + row.id + "\" id=\"boutton_" + row.id + "\"><span class=\"zmdi zmdi-edit\"></span></button> ";
                         }
                     }
                 });
+				
+				<?php foreach($tableau as $key => $value): ?>
+				$('#boutton_<?php echo $value["id"]; ?>').click(function(){
+					swal({ html:true, title:'Activite Piscine', text:'zefzef'});
+				});
+				<?php endforeach; ?>
+		
+		
             });
+			
         </script>
 
     </body>
