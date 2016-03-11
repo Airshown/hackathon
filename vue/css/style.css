@@ -331,7 +331,7 @@ header h1 small{
 #droite{
 	z-index: 8;
 	position:relative;
-	width: 22%;
+	width: 18%;
 	height: 110px;
 	float: right;
 	background: rgba(255,255,255,0);
@@ -347,7 +347,7 @@ header h1 small{
 #droite img{
 	width: 60px;
 	float:right;
-  margin-top: 11px;
+  margin-top: 60px;
 }
 
 .bloc-image {
