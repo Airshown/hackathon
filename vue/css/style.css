@@ -350,6 +350,12 @@ header h1 small{
   margin-top: 60px;
 }
 
+#droite .timeline-search {
+  width: 37px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+
 .bloc-image {
   background-image: url('../img/visit.svg');
   background-size: cover;
