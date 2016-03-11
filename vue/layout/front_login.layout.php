@@ -13,6 +13,15 @@
         <!-- CSS -->
         <link href="vue/backoffice/css/app.min.1.css" rel="stylesheet">
         <link href="vue/backoffice/css/app.min.2.css" rel="stylesheet">
+        <style type="text/css">
+          /*Modifications Front login Ludo*/
+          body.login-content:before {
+            background: #021f65;
+            background-image: url('../vue/img/logo-apple.png');
+            background-repeat: no-repeat;
+            background-position: top center;
+          }
+        </style>
     </head>
 
     <body class="login-content">
@@ -40,7 +49,7 @@
 			</form>
 
             <ul class="login-navigation">
-                <li data-block="#l-register" class="bgm-red">S'enregistrer</li>
+                <li data-block="#l-register" class="bgm-blue">S'enregistrer</li>
             </ul>
         </div>
 

@@ -3,7 +3,31 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=no" >
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="transparent" />
+
+        <!-- Icons pack -->
+        <link rel="apple-touch-icon" sizes="57x57" href="vue/img/icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="vue/img/icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="vue/img/icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="vue/img/icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="vue/img/icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="vue/img/icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="vue/img/icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="vue/img/icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="vue/img/icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="vue/img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="vue/img/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="vue/img/icons/favicon-16x16.png">
+
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="vue/img/icons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
         <title>Visit by Best Western Admin</title>
 
         <!-- Vendor CSS -->
@@ -11,12 +35,12 @@
         <link href="vue/backoffice/vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
         <link href="vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" rel="stylesheet">
         <link href="vue/backoffice/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
-        <link href="vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">        
-            
+        <link href="vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
         <!-- CSS -->
         <link href="vue/backoffice/css/app.min.1.css" rel="stylesheet">
         <link href="vue/backoffice/css/app.min.2.css" rel="stylesheet">
-        
+
     </head>
     <body>
         <header id="header" class="clearfix" data-current-skin="blue">
@@ -41,7 +65,7 @@
                                 <label for="tw-switch" class="ts-helper"></label>
                             </div>
                         </li>
-                        
+
                         <li class="dropdown">
                             <a data-toggle="dropdown" href=""><i class="tm-icon zmdi zmdi-more-vert"></i></a>
                             <ul class="dropdown-menu dm-icon pull-right">
@@ -53,7 +77,7 @@
                                 </li>
                             </ul>
                         </li>
-                        
+
                     </ul>
                 </li>
             </ul>
@@ -67,7 +91,7 @@
                 </div>
             </div>
         </header>
-        
+
         <section id="main" data-layout="layout-1">
             <aside id="sidebar" class="sidebar c-overflow">
                 <div class="profile-menu">
@@ -101,14 +125,14 @@
                     <li <?php if ($_SERVER['REQUEST_URI'] == "/backoffice/map") echo "class=\"active\""; ?>><a href="http://www.coteauto.net/backoffice/map"><i class="zmdi zmdi-format-underlined"></i> Carte des Utilisateurs</a></li>
                 </ul>
             </aside>
-            
+
             <?php
 			include("vue/".$controller."/".$action.".php");
 			?>
-        
+
         <footer id="footer">
-            Copyright &copy; 2016 Best Western BackOffice 
-            
+            Copyright &copy; 2016 Best Western BackOffice
+
             <ul class="f-menu">
                 <li><a href="http://www.coteauto.net/backoffice/index">Accueil</a></li>
                 <li><a href="http://www.coteauto.net/backoffice/notification">Notifications</a></li>
@@ -125,7 +149,7 @@
                 <p>Chargement...</p>
             </div>
         </div>
-        
+
         <!-- Older IE warning message -->
         <!--[if lt IE 9]>
             <div class="ie-warning">
@@ -166,27 +190,27 @@
                     </ul>
                 </div>
                 <p>Sorry for the inconvenience!</p>
-            </div>   
+            </div>
         <![endif]-->
-        
+
         <!-- Javascript Libraries -->
-		
+
 		  <!-- Javascript Libraries -->
         <script src="vue/backoffice/vendors/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="vue/backoffice/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        
+
         <script src="vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="vue/backoffice/vendors/bower_components/Waves/dist/waves.min.js"></script>
         <script src="vue/backoffice/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
-        <script src="vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>  
-        <script src="vue/backoffice/vendors/bootgrid/jquery.bootgrid.updated.js"></script>		
+        <script src="vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
+        <script src="vue/backoffice/vendors/bootgrid/jquery.bootgrid.updated.js"></script>
 
         <script src="vue/backoffice/vendors/bower_components/flot/jquery.flot.js"></script>
         <script src="vue/backoffice/vendors/bower_components/flot/jquery.flot.resize.js"></script>
         <script src="vue/backoffice/vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
         <script src="vue/backoffice/vendors/sparklines/jquery.sparkline.min.js"></script>
         <script src="vue/backoffice/vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
-        
+
         <script src="vue/backoffice/vendors/bower_components/moment/min/moment.min.js"></script>
         <script src="vue/backoffice/vendors/bower_components/fullcalendar/dist/fullcalendar.min.js "></script>
         <script src="vue/backoffice/vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
@@ -194,16 +218,16 @@
         <script src="vue/backoffice/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
         <script src="vue/backoffice/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
         <script src="vue/backoffice/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-        
+
         <!-- Placeholder for IE9 -->
         <!--[if IE 9 ]>
             <script src="vue/backoffice/vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
         <![endif]-->
-        
+
         <script src="vue/backoffice/js/flot-charts/curved-line-chart.js"></script>
         <script src="vue/backoffice/js/flot-charts/line-chart.js"></script>
         <script src="vue/backoffice/js/charts.js"></script>
-        
+
         <script src="vue/backoffice/js/charts.js"></script>
         <script src="vue/backoffice/js/functions.js"></script>
         <script src="vue/backoffice/js/demo.js" class="<?php echo $_SESSION['nomUtilisateur']; ?>" id="ouehr"></script>
@@ -219,7 +243,7 @@
                         iconUp: 'zmdi-expand-less'
                     },
                 });
-                
+
                 //Selection
                 $("#data-table-selection").bootgrid({
                     css: {
@@ -234,7 +258,7 @@
                     rowSelect: true,
                     keepSelection: true
                 });
-                
+
                 //Command Buttons
                 $("#data-table-command").bootgrid({
                     css: {
@@ -252,6 +276,6 @@
                 });
             });
         </script>
-        
+
     </body>
   </html>

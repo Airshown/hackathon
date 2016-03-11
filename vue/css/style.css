@@ -350,6 +350,12 @@ header h1 small{
   margin-top: 60px;
 }
 
+#droite .timeline-search {
+  width: 37px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+
 .bloc-image {
   background-image: url('../img/visit.svg');
   background-size: cover;
@@ -853,12 +859,4 @@ footer {
       line-height: 36px;
       font-size: 13px;
    }
-}
-
-/*Modifications Front login Ludo*/
-body.login-content:before {
-  background: #021f65;
-  background-image: url('../../img/logo-apple.png');
-  background-repeat: no-repeat;
-  background-position: top center;
 }
