@@ -854,11 +854,3 @@ footer {
       font-size: 13px;
    }
 }
-
-/*Modifications Front login Ludo*/
-body.login-content:before {
-  background: #021f65 !important;
-  background-image: url('../../img/logo-apple.png') !important;
-  background-repeat: no-repeat !important;
-  background-position: top center !important;
-}

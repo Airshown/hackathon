@@ -13,6 +13,15 @@
         <!-- CSS -->
         <link href="vue/backoffice/css/app.min.1.css" rel="stylesheet">
         <link href="vue/backoffice/css/app.min.2.css" rel="stylesheet">
+        <style media="screen">
+          /*Modifications Front login Ludo*/
+          body.login-content:before {
+            background: #021f65;
+            background-image: url('../../img/logo-apple.png');
+            background-repeat: no-repeat;
+            background-position: top center;
+          }
+        </style>
     </head>
 
     <body class="login-content">
