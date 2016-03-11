@@ -44,7 +44,7 @@
                                     <td><?php echo $value["id"]; ?></td>
                                     <td><?php echo $value["nom"] ?> <?php echo $value["prenom"]; ?></td>
                                     <td><?php echo $date_debut ?> au <?php echo $date_fin; ?></td>
-									<td><button type="button" class="btn btn-icon command-edit waves-effect waves-circle" id="boutton_<?php echo $value["id"]; ?>" onclick="swal({ html:true, title:'<?php echo $value["nom"]." ".$value["prenom"]; ?>', text:'Taux de satisfaction : <?php echo count($resultat[0]["tauxpositif"]*100); ?>\nNombre d\'avis : <?php echo $resultat2[0]["tauxpositif"]; ?>'});"><span class="zmdi zmdi-edit"></span></button></td>
+									<td><button type="button" class="btn btn-icon command-edit waves-effect waves-circle" id="boutton_<?php echo $value["id"]; ?>" onclick="swal({ html:true, title:'<?php echo $value["nom"]." ".$value["prenom"]; ?>', text:'Taux de satisfaction : <?php echo round($resultat[0]["tauxpositif"]*100); ?>\nNombre d\'avis : <?php echo $resultat2[0]["tauxpositif"]; ?>'});"><span class="zmdi zmdi-edit"></span></button></td>
                                 </tr>
 								<?php 
 								unset($sql);
