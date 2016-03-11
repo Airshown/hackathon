@@ -6,6 +6,11 @@
 		<action>defaultPage</action>
 	</route>
 	<route>
+		<url>^/front/login$</url>
+		<controller>front</controller>
+		<action>login</action>
+	</route>
+	<route>
 		<url>^/logout$</url>
 		<controller>logout</controller>
 		<action>defaultPage</action>

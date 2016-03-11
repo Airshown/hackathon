@@ -2,7 +2,7 @@
 class backoffice
 {
     public function defaultPage($args){
-		if (security::is_connected() == 1){
+		if (security::is_connected() && $_SESSION["is_admin"] == 1){
 			$view = new vue("admin", "index", "backoffice.layout");
 			
 			$users = new bdd;
@@ -18,7 +18,7 @@ class backoffice
     }
 	
 	public function notification($args){
-		if (security::is_connected() == 1){
+		if (security::is_connected() && $_SESSION["is_admin"] == 1){
 
 			if ($args["envoyer"] == "oui"){
 				$notification = new notification;
@@ -40,7 +40,7 @@ class backoffice
 	}
 	
 	public function map($args){
-		if (security::is_connected() == 1){
+		if (security::is_connected() && $_SESSION["is_admin"] == 1){
 			$view = new vue("admin", "map", "backoffice.layout");
 			
 		}else{

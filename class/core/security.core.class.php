@@ -7,7 +7,7 @@ class security{
 			$utilisateur->getOneBy($_SESSION["session"], "session", "user");
 			$utilisateur->setFromBdd($utilisateur->result);
 				if ($utilisateur->get_id() != 0 ){
-						return $utilisateur->get_is_admin();
+						return TRUE;
 				}else{
 					return FALSE;
 				}
@@ -18,7 +18,7 @@ class security{
 	
 	public static function returnId(){
 		if (self::is_connected()){
-			$utilisateur = new users;
+			$utilisateur = new user;
 			$utilisateur->getOneBy($_SESSION["session"], "session", "user");
 			return $utilisateur->result["id"];
 		}else{
@@ -33,15 +33,20 @@ class security{
 		$elements = security::sanitize($elements);
 		$utilisateur->getOneBy($elements["email"], "email", "user");
 		$utilisateur->setFromBdd($utilisateur->result);
-		if ($utilisateur->get_password() == self::makePassword($elements["password"]) && $utilisateur->get_is_admin() == 1){
+		if ($utilisateur->get_password() == self::makePassword($elements["password"])){
 			$uniqid = fonctions::id_aleatoire();
 			$_SESSION['session'] = $uniqid;
+			$_SESSION['is_admin'] = $utilisateur->get_is_admin();
 			$_SESSION['nomUtilisateur'] = $utilisateur->get_prenom()." ".$utilisateur->get_nom();
 			$utilisateur->set_session($uniqid);
 			$utilisateur->save("user");
-			header('HTTP/1.0 302 Found');
-			header("Location: http://www.coteauto.net/backoffice/index");
-			exit;
+			if ($utilisateur->get_is_admin() == 1){
+				header("Location: http://www.coteauto.net/backoffice/index");
+				exit;
+			}else{
+				header("Location: http://www.coteauto.net/");
+				exit;
+			}
 		}else{
 			$_SESSION['erreur'] = "Il est impossible de vous identifier avec les identifiants saisis";
 			header('HTTP/1.0 302 Found');
