@@ -75,11 +75,18 @@
     .jvectormap-legend-icons {
       color: black;
     }
+	#moncercle{
+		z-index:9999;
+	  	width:40px;
+	  	height:40px;
+	}
+	
   </style>
   <section id="content">
                 <div class="container">
  <div class="map" style="width: 800px; height: 500px"></div>
  	
+		<img src="vue/backoffice/img/pastille-lieu.png" id="moncercle">
 		</div>
 </section>
 
