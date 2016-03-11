@@ -43,7 +43,7 @@
 
 		<header>
 			<div id="gauche" style="padding: 10px;">
-		 		<a class="title-link" href="/home">< Retour sur l'accueil</a>
+		 		<a class="title-link" href="/home">&#10094; Retour sur l'accueil</a>
 			</div>
 			<div id="droite">
 				<img class="timeline-search" src="vue/img/loupe.svg">
