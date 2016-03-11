@@ -17,7 +17,7 @@
           /*Modifications Front login Ludo*/
           body.login-content:before {
             background: #021f65;
-            background-image: url('../../img/logo-apple.png');
+            background-image: url('../vue/img/logo-apple.png');
             background-repeat: no-repeat;
             background-position: top center;
           }
