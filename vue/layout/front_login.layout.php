@@ -49,7 +49,7 @@
 			</form>
 
             <ul class="login-navigation">
-                <li data-block="#l-register" class="bgm-orange">S'enregistrer</li>
+                <li data-block="#l-register" class="bgm-blue">S'enregistrer</li>
             </ul>
         </div>
 
